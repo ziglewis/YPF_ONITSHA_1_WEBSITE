@@ -53,6 +53,8 @@
 
 
 section {
+
+    padding-top: 150px;
     border: 4px solid goldenrod;
 }
 
@@ -95,6 +97,7 @@ body{
      left: 0;
      right: 0;
      z-index: 2;
+    
 }
 .my-nav-bar h6 {
     font-size:x-small;
@@ -108,7 +111,7 @@ body{
     font-size: 14px;
 }
 .color-fill:hover {
-    animation-name: color-fill-reverse;
+    animation-name: color-fill;
     animation-duration: 0.5s;
     animation-timing-function: linear;
     background-image: linear-gradient(90deg, rgba(107, 195, 41, 1) 100%, rgba(107, 195, 41, 0)100%);
