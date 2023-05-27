@@ -2,5 +2,60 @@
 body{
     margin: 0px;
     box-sizing: border-box;
-    padding: 20px 200px;
+    font-family: Verdana, Tahoma, sans-serif;
+    /* padding: 20px 200px; */
+    background-image: url(images/page1samplePic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#logo { display: flex;
+    align-items: center;
+    min-width: 150px;
+    width: 150px;
+    color: #ffffff;
+    /* border: 3px solid yellow; */
+    padding: 0%;
+    height: 60px;
+
+}
+
+
+
+.my-nav-bar {
+    display: flex;
+    background-color: #296a12;
+    justify-content: space-between;
+    padding:5px 180px;
+    position: fixed;
+    width: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+    align-items: center;
+     top: 0;
+     left: 0;
+     right: 0;
+}
+.my-nav-bar h6 {
+    font-size:x-small;
+    font-weight: 1000;
+}
+
+.Other-bars {
+    display: flex;
+    /* border: 2px solid blue; */
+    align-items: center;
+    font-size: 14px;
+}
+
+.Other-bars a div {
+    color: white;
+    padding: 10px 15px ;
+    box-sizing: border-box;
+
+    
+}
+
+.Other-bars a{
+    text-decoration: none;
 }
