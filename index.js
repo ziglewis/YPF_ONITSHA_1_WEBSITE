@@ -41,13 +41,37 @@ let myOurDriveSectionContents = [
             myOurDriveSectionContents.forEach(generateMyOurDriveSectionContents)
             myOurDriveSection.innerHTML = ourDriveSectionContentsResults
             
-             console.log(ourDriveSectionContentsResults)
+            //  console.log(ourDriveSectionContentsResults)
             
-            // console.log( myOurDriveSectionContents[0].title)
+            // // console.log( myOurDriveSectionContents[0].title)
             
-            // myOurDriveSection.innerHTML +=
+            
+        //  Here i am controlling the event drop down on the nav-bar 
+let navBarEventsDropDown = document.querySelector(".navbar-events")
+let myRestOfBody = document.querySelector(".rest-of-body")
+let navBarEventsDropDownContent = document.getElementById("Event-drop-down")
+let eventArrow = document.getElementById("arrow") //this helps to change the arrow direction on clicking the event on navbar
 
+let eventDropDownLive = false //this combined with the showEventsDropDown functions makes it possible for the event to also hide the drop down after it has brought it out by If statement.
 
+let showEventsDropDown = () => {
+     
+     if (eventDropDownLive === false) {
+    navBarEventsDropDownContent.style.display = "block"
+    eventArrow.textContent = "▲"
+    eventDropDownLive = true }
+    else { hideEventsDropDown()}
+    
+     }
+
+ let hideEventsDropDown = () => {
+    navBarEventsDropDownContent.style.display = "none"
+    eventArrow.textContent = "▼"
+    eventDropDownLive = false
+ }
+navBarEventsDropDown.addEventListener ("click", showEventsDropDown)
+myRestOfBody.addEventListener ("click", hideEventsDropDown)
+//  All about events drop-down navbar ends here
 
 
 
