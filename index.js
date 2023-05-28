@@ -1,5 +1,9 @@
 
 
+
+
+
+
 // JS FOR HOME PAGE STARTS HERE
 
 
@@ -52,6 +56,18 @@ let myRestOfBody = document.querySelector(".rest-of-body")
 let navBarEventsDropDownContent = document.getElementById("Event-drop-down")
 let eventArrow = document.getElementById("arrow") //this helps to change the arrow direction on clicking the event on navbar
 let myNavBarEvent = document.querySelector(".navbar-events")
+let reverseColorFill = document.querySelectorAll(".color-fill")
+
+ let attachEventListener = (eachData) => {
+    eachData.addEventListener("mouseout", function() {
+    this.classList.add("color-fill-reverse")    
+})
+}
+
+reverseColorFill.forEach(attachEventListener)
+
+
+
 
 let eventDropDownLive = false //this combined with the showEventsDropDown functions makes it possible for the event to also hide the drop down after it has brought it out by If statement.
 
