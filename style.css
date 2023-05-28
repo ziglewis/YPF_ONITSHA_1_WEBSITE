@@ -127,9 +127,7 @@ body{
 .Other-bars  div  {
     color: white;
     padding: 10px 15px ;
-    box-sizing: border-box;
-
-    
+    box-sizing: border-box; 
 }
 
 .Other-bars a, #Event-drop-down a{
@@ -157,6 +155,21 @@ body{
     padding: 15px ;
   }
   
+  .minimize-icon {
+    border: 1px solid white;
+    position: fixed;
+    top: 18px;
+    right: 30px;
+    width: 30px; 
+    height: 30px;
+    display: none;
+  }
+
+  .minimize-icon:hover {
+        background-color: rgba(107, 195, 41);
+
+  }
+
   /* .navbar-events:hover #Event-drop-down{
     display: block;
   } */
