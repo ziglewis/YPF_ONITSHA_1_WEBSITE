@@ -148,18 +148,19 @@ body{
     background-color: black;
     opacity: 0.8;
     padding: 15px  0px;
-    width: 160px;
+    width: 150px;
     box-shadow: 0px 8px 16px 0px #296a12;
     z-index: 4;
-    right: 430px;
-    top: 60px;
+    right: 440px;
+    top: 67px;
     text-align: justify;
-    justify-content: left;
+    justify-content: center;
     font-size: 14px;
   }
 
   #Event-drop-down div { 
-    padding: 15px ;
+    padding: 5px 15px;
+    
   }
   
   .minimize-icon {
@@ -196,7 +197,7 @@ hr {
     text-align: center;
     position: fixed;
     left: 3%;
-    border: 2px solid black;
+    border: 0.2px solid rgb(230, 215, 215);
     visibility: hidden;
     
 }
@@ -211,7 +212,9 @@ hr {
     position: fixed;
     width: 100%;
     box-sizing: border-box;
-    visibility: hidde;
+    visibility: hidden;
+   
+
 }
 #pop-up-Event-drop-down {
     
@@ -221,4 +224,49 @@ hr {
     line-height: 1.5;
     display: none;
     
+}
+
+
+@media (max-width: 1100px) {
+
+.my-nav-bar {
+    
+    padding:12px 20px;
+    }
+
+    #Event-drop-down {
+        right: 278px;
+       
+    }
+
+}
+
+
+
+
+@media (max-width: 760px) {
+
+    .minimize-icon{
+        display: block;
+    }
+
+    .Other-bars {
+        display: none;
+    }
+
+.my-nav-bar {
+    
+    padding:12px 2%;
+    }
+
+    #Event-drop-down {
+        content-visibility: hidden;
+        padding: 0px;
+        opacity: 0.95;
+        right: -1000px;
+       
+
+        /* display: none;    */
+    }
+
 }

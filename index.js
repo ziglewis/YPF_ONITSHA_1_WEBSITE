@@ -65,6 +65,11 @@ let myPopUpEventDropDownContents = document.querySelectorAll(".pop-up-event-drop
 let eventArrow = document.getElementById("arrow") //this helps to change the arrow direction on clicking the event on navbar
 let myNavBarEvent = document.querySelector(".navbar-events")
 let reverseColorFill = document.querySelectorAll(".color-fill")
+let myMinimizeIcon = document.querySelector(".minimize-icon")
+let myPopUp = document.querySelector(".pop-up")
+let myHr = document.querySelector("hr")
+
+
 
  let attachEventListener = (eachData) => {
     eachData.addEventListener("mouseout", function() {
@@ -109,7 +114,7 @@ let popUpDropDownLive = false
 
 myPopUpEventsDropDown.addEventListener ("click", function(){
     
-   let deleteClass = (eachvalue) => {eachvalue.classList.remove("color-fill-reverse")}
+   let deleteClass = (eachValue) => {eachValue.classList.remove("color-fill-reverse")}
     myPopUpEventDropDownContents.forEach(deleteClass)
     
     if ( popUpDropDownLive === false ) {
@@ -122,14 +127,32 @@ myPopUpEventsDropDown.addEventListener ("click", function(){
     }
     
 })
+
+
+function reversePopUpGradient(data) {
+    data.classList.add("color-fill-reverse")
+  }
+
+ let popUpLive = false
+  myMinimizeIcon.addEventListener ("click", function(){ 
+    
+    if ( popUpLive === false ) {
+        myPopUp.style.visibility = "visible"
+         myMinimizeIcon.style.backgroundColor = "rgba(107, 195, 41)"
+        myHr.style.visibility = "visible"
+         popUpLive= true 
+    }else { 
+        myPopUp.style.visibility = "hidden"
+        myMinimizeIcon.style.backgroundColor = "inherit"
+        myHr.style.visibility = "hidden"
+        popUpLive= false }
+   
+  })
+
 //  All about events drop-down navbar ends here
 
 
 
-function reversePopUpGradient(data) {
-  data.classList.add("color-fill-reverse")
-  
-}
 
 
 // JS FOR HOME PAGE ENDS HERE
