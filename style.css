@@ -111,7 +111,7 @@ body{
     align-items: center;
     font-size: 14px;
 }
-.color-fill:hover, .rat:hover{
+.color-fill:hover, .pop-up-event-dropdown-contents:hover{
     animation-name: color-fill;
     animation-duration: 0.3s;
     animation-timing-function: linear;
