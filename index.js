@@ -3,7 +3,6 @@
 
 
 
-
 // JS FOR HOME PAGE STARTS HERE
 
 
@@ -54,6 +53,8 @@ let myOurDriveSectionContents = [
 let navBarEventsDropDown = document.querySelector(".navbar-events")
 let myRestOfBody = document.querySelector(".rest-of-body")
 let navBarEventsDropDownContent = document.getElementById("Event-drop-down")
+// let navBarEventsDropDownContentClasses = document.querySelectorAll("#Event-drop-down div")
+// console.log(navBarEventsDropDownContentClasses)
 let eventArrow = document.getElementById("arrow") //this helps to change the arrow direction on clicking the event on navbar
 let myNavBarEvent = document.querySelector(".navbar-events")
 let reverseColorFill = document.querySelectorAll(".color-fill")
@@ -67,28 +68,31 @@ let reverseColorFill = document.querySelectorAll(".color-fill")
 reverseColorFill.forEach(attachEventListener)
 
 
-
-
 let eventDropDownLive = false //this combined with the showEventsDropDown functions makes it possible for the event to also hide the drop down after it has brought it out by If statement.
 
 let showEventsDropDown = () => {
      
      if (eventDropDownLive === false) {
-    navBarEventsDropDownContent.style.display = "block"
+        //    navBarEventsDropDownContentClasses.forEach(removeEventListener)
+    navBarEventsDropDownContent.style.visibility= "visible"
     myNavBarEvent.style.backgroundColor = "rgba(107, 195, 41)"
     myNavBarEvent.style.color = "black"
+    
+    //navBarEventsDropDownContentClasses.forEach(attachEventListener)
 
     eventArrow.textContent = "▲"
     eventDropDownLive = true }
+    
     else { hideEventsDropDown()}
     
      }
 
  let hideEventsDropDown = () => {
-    navBarEventsDropDownContent.style.display = "none"
+    navBarEventsDropDownContent.style.visibility = "hidden"
     eventArrow.textContent = "▼"
     myNavBarEvent.style.backgroundColor = "inherit"
     myNavBarEvent.style.color = "inherit"
+  
     eventDropDownLive = false
  }
 navBarEventsDropDown.addEventListener ("click", showEventsDropDown)

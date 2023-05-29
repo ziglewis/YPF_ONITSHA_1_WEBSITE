@@ -87,7 +87,7 @@ body{
     display: flex;
     background-color: #296a12;
     justify-content: space-between;
-    padding:5px 180px;
+    padding:12px 180px;
     position: fixed;
     width: 100%;
     margin: 0px;
@@ -136,7 +136,7 @@ body{
 }
 
 #Event-drop-down {
-    display: none;
+    visibility: hidden;
     position: fixed;
     background-color: black;
     opacity: 0.8;
