@@ -1,5 +1,6 @@
 
 
+
 @keyframes color-fill {
     0% {background-image: linear-gradient(90deg, rgba(107, 195, 41, 1) 0%, rgba(107, 195, 41, 0)0%);}
     5% { background-image: linear-gradient(90deg, rgba(107, 195, 41, 1) 5%, rgba(107, 195, 41, 0)5%); }
@@ -110,7 +111,7 @@ body{
     align-items: center;
     font-size: 14px;
 }
-.color-fill:hover {
+.color-fill:hover, .rat:hover{
     animation-name: color-fill;
     animation-duration: 0.3s;
     animation-timing-function: linear;
@@ -119,6 +120,12 @@ body{
 
 .color-fill-reverse {
     animation-name: color-fill-reverse;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+}
+    
+    .pop-up-color-fill {
+    animation-name: color-fill;
     animation-duration: 0.3s;
     animation-timing-function: linear;
 }
