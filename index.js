@@ -3,6 +3,8 @@
 
 
 
+
+
 // JS FOR HOME PAGE STARTS HERE
 
 
@@ -51,8 +53,10 @@ let myOurDriveSectionContents = [
             
         //  Here i am controlling the event drop down on the nav-bar 
 let navBarEventsDropDown = document.querySelector(".navbar-events")
+let myPopUpEventsDropDown = document.querySelector(".pop-up-events")
 let myRestOfBody = document.querySelector(".rest-of-body")
 let navBarEventsDropDownContent = document.getElementById("Event-drop-down")
+let myPopUpDropDownContent = document.getElementById("pop-up-Event-drop-down")
 // let navBarEventsDropDownContentClasses = document.querySelectorAll("#Event-drop-down div")
 // console.log(navBarEventsDropDownContentClasses)
 let eventArrow = document.getElementById("arrow") //this helps to change the arrow direction on clicking the event on navbar
@@ -97,6 +101,21 @@ let showEventsDropDown = () => {
  }
 navBarEventsDropDown.addEventListener ("click", showEventsDropDown)
 myRestOfBody.addEventListener ("click", hideEventsDropDown)
+
+let popUpDropDownLive = false
+
+myPopUpEventsDropDown.addEventListener ("click", function(){
+    
+    if ( popUpDropDownLive === false ) {
+        myPopUpDropDownContent.style.display = "flex"
+        popUpDropDownLive = true 
+    }else { 
+         myPopUpDropDownContent.style.display = "none"
+        popUpDropDownLive = false 
+        
+    }
+    
+})
 //  All about events drop-down navbar ends here
 
 
