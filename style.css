@@ -272,3 +272,15 @@ hr {
     }
 
 }
+
+
+@media (min-width: 761px) {
+    .pop-up, hr {
+        
+        margin-top: -7000px;
+             z-index: -6;
+        visibility: hidden;
+       
+    }
+
+}
