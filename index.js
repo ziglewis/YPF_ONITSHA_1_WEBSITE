@@ -63,6 +63,7 @@ let myPopUpEventDropDownContents = document.querySelectorAll(".pop-up-event-drop
 // let navBarEventsDropDownContentClasses = document.querySelectorAll("#Event-drop-down div")
 // console.log(navBarEventsDropDownContentClasses)
 let eventArrow = document.getElementById("arrow") //this helps to change the arrow direction on clicking the event on navbar
+let myPopUpArrow = document.getElementById("PopUp-arrow")
 let myNavBarEvent = document.querySelector(".navbar-events")
 let reverseColorFill = document.querySelectorAll(".color-fill")
 let myMinimizeIcon = document.querySelector(".minimize-icon")
@@ -112,21 +113,28 @@ myRestOfBody.addEventListener ("click", hideEventsDropDown)
 
 let popUpDropDownLive = false
 
-myPopUpEventsDropDown.addEventListener ("click", function(){
-    
-   let deleteClass = (eachValue) => {eachValue.classList.remove("color-fill-reverse")}
+let gogo = () => { 
+    let deleteClass = (eachValue) => {eachValue.classList.remove("color-fill-reverse")}
     myPopUpEventDropDownContents.forEach(deleteClass)
     
     if ( popUpDropDownLive === false ) {
         myPopUpDropDownContent.style.display = "flex"
+        myPopUpArrow.textContent = "▲"
+        myPopUpEventsDropDown.style.backgroundColor = "rgba(107, 195, 41)"
         popUpDropDownLive = true 
     }else { 
          myPopUpDropDownContent.style.display = "none"
+        myPopUpArrow.textContent = "▼"
+        myPopUpEventsDropDown.style.backgroundColor = "inherit"
         popUpDropDownLive = false 
         
     }
+
+}
+
+myPopUpEventsDropDown.addEventListener ("click", gogo )
     
-})
+   
 
 
 function reversePopUpGradient(data) {
@@ -142,10 +150,13 @@ function reversePopUpGradient(data) {
         myHr.style.visibility = "visible"
          popUpLive= true 
     }else { 
+        gogo()
         myPopUp.style.visibility = "hidden"
         myMinimizeIcon.style.backgroundColor = "inherit"
         myHr.style.visibility = "hidden"
         popUpLive= false }
+
+        
    
   })
 
