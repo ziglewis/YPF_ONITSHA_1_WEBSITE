@@ -195,7 +195,7 @@ let poUpOnAndOff = () => {
                                     <a href = "${dataPoint.link}"> <div class= "Hero-footer-content">${dataPoint.footTag}</div> <div class="Hero-footer-line color-fill"> </div></a>
                                 </div>           
                                  `
-                                //  myHeroPageImages.style.backgroundImage = 'linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("' + dataPoint.imagePath +' ")'
+                                 myHeroPageImages.style.backgroundImage = 'linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("' + dataPoint.imagePath +' ")'
                                
 
             }
