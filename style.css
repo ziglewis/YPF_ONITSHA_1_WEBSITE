@@ -219,6 +219,8 @@ hr {
 #pop-up-Event-drop-down {
     
     /* display: flex; */
+
+    padding-top: 5px;
     flex-direction: column;
     gap: 5px;
     line-height: 1.5;
