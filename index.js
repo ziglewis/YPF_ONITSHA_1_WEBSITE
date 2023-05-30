@@ -145,6 +145,41 @@ let poUpOnAndOff = () => {
 
 // I am commencing the section two of the page, i.e the HERO page of the website! 30th-may- 13:40pm 2023
 
+        let myBackgroundImages = [
+
+
+                                { imagePath: "images/backgroundImage4.jpeg",
+                                headerLeft: "YPF",
+                                headerRight: "Meet-up",
+                                content: "A capacity building gathering of young professionals.",
+                                footTag: "JOIN HERE",
+                                link: "wwwwwww.arg"
+                                },
+                                            
+                                { 
+                                imagePath: "images/backgroundImage1.jpeg",
+                                headerLeft: "YOUNG",
+                                headerRight: "PROFESSIONALS FORUM",
+                                content: "We have a commitment to bring about the change we desire in our communities.",
+                                footTag: "JOIN US",
+                                link: "wwwwwww.arg"
+                                },
+
+
+                                { 
+                                imagePath: "images/backgroundImage2.jpg",
+                                headerLeft: "YPF",
+                                headerRight: "Skill Acquisition",
+                                content: "A free intensive Skill Acquisition Programme that enables participants to learn skills that interest them.",
+                                footTag: "REGISTER HERE",
+                                link: "wwwwwww.arg"
+                                } 
+                    
+                        ]
+
+
+
+
 
 
 // //the section two of the page, i.e the HERO page of the website ends here.

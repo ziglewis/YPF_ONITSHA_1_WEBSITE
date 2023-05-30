@@ -1,6 +1,7 @@
 
 
 
+
 @keyframes color-fill {
     0% {background-image: linear-gradient(90deg, rgba(107, 195, 41, 1) 0%, rgba(107, 195, 41, 0)0%);}
     5% { background-image: linear-gradient(90deg, rgba(107, 195, 41, 1) 5%, rgba(107, 195, 41, 0)5%); }
@@ -186,10 +187,14 @@ body{
     display: block;
   } */
 
+  
+  
   main { 
     /* padding: 160px; */
     color: #ffffff;
-    background-color: black;
+    box-sizing: border-box;
+    border: 4px solid indianred;
+   
 
 }
 
@@ -232,7 +237,41 @@ hr {
     display: none;
     
 }
+/* NAV BAR AND ITS CHILDREN ENDED HERE */
 
+/* SECTION TWO STARTED I.E HERO PAGE */
+
+.innermost-background-image { /* Are you looking for the innermost background image. it is buried here only to be seen on transparency /opaque */
+
+    width: 100%;
+    height: 700px;
+    position: fixed;
+    z-index: -10;
+    border: 3px solid greenyellow;
+    top : 60px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/backgroundImage2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+
+} /* Are you looking for the innermost background image. it is buried here only to be seen on transparency /opaque */
+
+.scrol-images-background{
+
+    padding: 50px 5%;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top:  -85px;
+    border: 3px solid black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/megaSummit.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    
+}
 
 @media (max-width: 1100px) {
 
