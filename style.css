@@ -73,8 +73,8 @@ body{
 }
 #logo { display: flex;
     align-items: center;
-    min-width: 155px;
-    width: 155px;
+    min-width: 147px;
+    width: 147px;
     color: #ffffff;
     /* border: 3px solid yellow; */
     padding: 0%;
@@ -201,7 +201,8 @@ hr {
     text-align: center;
     position: fixed;
     left: 3%;
-    border: 0.2px solid rgb(230, 215, 215);
+    border: 0.2px solid black;
+    opacity: 0.3;
     visibility: hidden;
     
 }
