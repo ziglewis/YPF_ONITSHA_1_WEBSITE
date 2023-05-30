@@ -150,13 +150,12 @@ function reversePopUpGradient(data) {
         myHr.style.visibility = "visible"
          popUpLive= true 
     }else { 
-        gogo()
+        if (popUpDropDownLive === true) { gogo() }
+        
         myPopUp.style.visibility = "hidden"
         myMinimizeIcon.style.backgroundColor = "inherit"
         myHr.style.visibility = "hidden"
-        popUpLive= false }
-
-        
+        popUpLive= false }  
    
   })
 
