@@ -167,7 +167,7 @@ let poUpOnAndOff = () => {
 
 
                                 { 
-                                imagePath: "images/backgroundImage2.jpg",
+                                imagePath: "images/backgroundImage3.jpg",
                                 headerLeft: "YPF",
                                 headerRight: "Skill Acquisition",
                                 content: "A free intensive Skill Acquisition Programme that enables participants to learn skills that interest them.",
@@ -176,6 +176,28 @@ let poUpOnAndOff = () => {
                                 } 
                     
                         ]
+
+        let myHeroWriteup = document.querySelector(".scrol-images-writeup-left")
+        let gogo = document.querySelector(".scrol-images-background")
+
+    
+            let generateHeroContent = (dataPoint)=> {
+                myHeroWriteup.innerHTML = ` 
+                                <h1 class="hero-head"><span class="Hero-head-span">${dataPoint.headerLeft}</span> ${dataPoint.headerRight}</h1>
+                                <p class= "hero-content">${dataPoint.content}</p>
+                                <div class= "Hero-footer"> 
+                                    <a href = "${dataPoint.link}"> <p class= "Hero-footer-content">${dataPoint.footTag}</p> <div class="Hero-footer-line"> </div></a>
+                                </div>           
+                                 `
+                                 gogo.style.backgroundImage = 'linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("' + dataPoint.imagePath +' ")'
+                               
+
+            }
+
+            
+        generateHeroContent(myBackgroundImages[0])
+
+        // let backgroundInterval =
 
 
 
