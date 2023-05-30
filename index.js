@@ -158,7 +158,7 @@ let poUpOnAndOff = () => {
                                 },
                                             
                                 { 
-                                imagePath: "images/backgroundImage1.jpeg",
+                                imagePath: "images/megaSummit.jpg",
                                 headerLeft: "YOUNG",
                                 headerRight: "PROFESSIONALS FORUM",
                                 content: "We have a commitment to bring about the change we desire in our communities.",
@@ -169,7 +169,7 @@ let poUpOnAndOff = () => {
 
 
                                 { 
-                                imagePath: "images/backgroundImage3.jpg",
+                                imagePath: "images/skill6.jpg",
                                 headerLeft: "YPF",
                                 headerRight: "Skill Acquisition",
                                 content: "A free intensive Skill Acquisition Programme that enables participants to learn skills that interest them.",
@@ -182,7 +182,7 @@ let poUpOnAndOff = () => {
                         ]
 
         let myHeroWriteup = document.querySelector(".scrol-images-writeup-left")
-        let gogo = document.querySelector(".scrol-images-background")
+        let myHeroPageImages = document.querySelector(".scrol-images-background")
 
     
             let generateHeroContent = dataPoint => {
@@ -192,30 +192,30 @@ let poUpOnAndOff = () => {
                                 <h1 class="hero-head"><span class="Hero-head-span">${dataPoint.headerLeft}</span> ${dataPoint.headerRight}</h1>
                                 <p class= "hero-content">${dataPoint.content}</p>
                                 <div class= "Hero-footer"> 
-                                    <a href = "${dataPoint.link}"> <p class= "Hero-footer-content">${dataPoint.footTag}</p> <div class="Hero-footer-line"> </div></a>
+                                    <a href = "${dataPoint.link}"> <div class= "Hero-footer-content">${dataPoint.footTag}</div> <div class="Hero-footer-line color-fill"> </div></a>
                                 </div>           
                                  `
-                                 gogo.style.backgroundImage = 'linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("' + dataPoint.imagePath +' ")'
+                                //  myHeroPageImages.style.backgroundImage = 'linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("' + dataPoint.imagePath +' ")'
                                
 
             }
 
          
-            function ebuzzy() {  
+            function getBackgroundImage() {  
 
-                async function ebuzzyDelay() {
+                async function backgroundImageDelay() {
             for (let i = 0; i < myBackgroundImages.length; i++) {
             // let individualObjectsInArray = i
             generateHeroContent(myBackgroundImages[i])
-            await new Promise(resolve => setTimeout(resolve, 4000))
+            await new Promise(resolve => setTimeout(resolve, 5000))
 
                  } 
-                 ebuzzyDelay()
+                 backgroundImageDelay()
                  }
-                 ebuzzyDelay()
+                 backgroundImageDelay()
          }
 
-           ebuzzy()
+           getBackgroundImage()
 
         // let backgroundInterval =
 
