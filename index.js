@@ -1,12 +1,4 @@
 
-
-
-
-
-
-
-
-
 // JS FOR HOME PAGE STARTS HERE
 
 
@@ -47,11 +39,7 @@ let myOurDriveSectionContents = [
                                         
             myOurDriveSectionContents.forEach(generateMyOurDriveSectionContents)
             myOurDriveSection.innerHTML = ourDriveSectionContentsResults
-            
-            //  console.log(ourDriveSectionContentsResults)
-            
-            // // console.log( myOurDriveSectionContents[0].title)
-            
+              
             
         //  Here i am controlling the event drop down on the nav-bar 
 let navBarEventsDropDown = document.querySelector(".navbar-events")
@@ -60,8 +48,6 @@ let myRestOfBody = document.querySelector(".rest-of-body")
 let navBarEventsDropDownContent = document.getElementById("Event-drop-down")
 let myPopUpDropDownContent = document.getElementById("pop-up-Event-drop-down")
 let myPopUpEventDropDownContents = document.querySelectorAll(".pop-up-event-dropdown-contents")
-// let navBarEventsDropDownContentClasses = document.querySelectorAll("#Event-drop-down div")
-// console.log(navBarEventsDropDownContentClasses)
 let eventArrow = document.getElementById("arrow") //this helps to change the arrow direction on clicking the event on navbar
 let myPopUpArrow = document.getElementById("PopUp-arrow")
 let myNavBarEvent = document.querySelector(".navbar-events")
@@ -71,15 +57,12 @@ let myPopUp = document.querySelector(".pop-up")
 let myHr = document.querySelector("hr")
 
 
-
  let attachEventListener = (eachData) => {
     eachData.addEventListener("mouseout", function() {
     this.classList.add("color-fill-reverse")    
-})
-}
+                 })   }
 
 reverseColorFill.forEach(attachEventListener)
-
 
 let eventDropDownLive = false //this combined with the showEventsDropDown functions makes it possible for the event to also hide the drop down after it has brought it out by If statement.
 
@@ -90,31 +73,27 @@ let showEventsDropDown = () => {
     navBarEventsDropDownContent.style.visibility= "visible"
     myNavBarEvent.style.backgroundColor = "rgba(107, 195, 41)"
     myNavBarEvent.style.color = "black"
-    
-    //navBarEventsDropDownContentClasses.forEach(attachEventListener)
-
     eventArrow.textContent = "▲"
-    eventDropDownLive = true }
+    eventDropDownLive = true 
+    } else { hideEventsDropDown()}
     
-    else { hideEventsDropDown()}
-    
-     }
+                                }
 
  let hideEventsDropDown = () => {
 
-    if ( popUpLive === true ) { poUpOnAndOff()}
+    if ( popUpLive === true ) { poUpOnAndOff()} // This will take care the popUp is properly on or off as desired
 
     navBarEventsDropDownContent.style.visibility = "hidden"
     eventArrow.textContent = "▼"
     myNavBarEvent.style.backgroundColor = "inherit"
     myNavBarEvent.style.color = "inherit"
-  
     eventDropDownLive = false
  }
-navBarEventsDropDown.addEventListener ("click", showEventsDropDown)
-myRestOfBody.addEventListener ("click", hideEventsDropDown)
 
-let popUpDropDownLive = false
+navBarEventsDropDown.addEventListener ("click", showEventsDropDown)
+myRestOfBody.addEventListener ("click", hideEventsDropDown) // because I want when the user clicks outside the popUps they will close.
+
+let popUpDropDownLive = false // This will help check if popupDropdown is alive or toggled on or displaying or not.
 
 let popUpEventContentOnAndOff = () => { 
     let deleteClass = (eachValue) => {eachValue.classList.remove("color-fill-reverse")}
@@ -132,21 +111,16 @@ let popUpEventContentOnAndOff = () => {
         myPopUpEventsDropDown.style.backgroundColor = "inherit"
         myPopUpEventsDropDown.style.color = "inherit"
         popUpDropDownLive = false 
-        
-    }
-
+         }
 }
 
 myPopUpEventsDropDown.addEventListener ("click", popUpEventContentOnAndOff )
     
-   
-
-
 function reversePopUpGradient(data) {
     data.classList.add("color-fill-reverse")
   }
 
- let popUpLive = false
+ let popUpLive = false // serving as a switch to regulate the popUp appearance and disappearance
 
 let poUpOnAndOff = () => {
 
@@ -156,7 +130,7 @@ let poUpOnAndOff = () => {
         myHr.style.visibility = "visible"
          popUpLive= true 
     }else { 
-        if (popUpDropDownLive === true) { popUpEventContentOnAndOff() }
+        if (popUpDropDownLive === true) { popUpEventContentOnAndOff() } // so that everything opened will be closed
         
         myPopUp.style.visibility = "hidden"
         myMinimizeIcon.style.backgroundColor = "inherit"
@@ -166,10 +140,13 @@ let poUpOnAndOff = () => {
 
   myMinimizeIcon.addEventListener ("click", poUpOnAndOff)
 
-//  All about events drop-down navbar ends here
+//  All about events drop-down navbar ends here         29th-May-2023
+
+
+// I am commencing the section two of the page, i.e the HERO page of the website!
 
 
 
-
+// //the section two of the page, i.e the HERO page of the website ends here.
 
 // JS FOR HOME PAGE ENDS HERE
