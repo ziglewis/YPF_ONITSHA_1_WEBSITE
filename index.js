@@ -153,7 +153,8 @@ let poUpOnAndOff = () => {
                                 headerRight: "Meet-up",
                                 content: "A capacity building gathering of young professionals.",
                                 footTag: "JOIN HERE",
-                                link: "wwwwwww.arg"
+                                link: "wwwwwww.arg",
+                                alt: "Young professionals having a meet-up like a rendezvous"
                                 },
                                             
                                 { 
@@ -162,7 +163,8 @@ let poUpOnAndOff = () => {
                                 headerRight: "PROFESSIONALS FORUM",
                                 content: "We have a commitment to bring about the change we desire in our communities.",
                                 footTag: "JOIN US",
-                                link: "wwwwwww.arg"
+                                link: "wwwwwww.arg",
+                                alt: "Young professionals looking happy and excited"
                                 },
 
 
@@ -172,7 +174,9 @@ let poUpOnAndOff = () => {
                                 headerRight: "Skill Acquisition",
                                 content: "A free intensive Skill Acquisition Programme that enables participants to learn skills that interest them.",
                                 footTag: "REGISTER HERE",
-                                link: "wwwwwww.arg"
+                                link: "wwwwwww.arg",
+                                alt: "Young professionals in a skill acquisition session "
+
                                 } 
                     
                         ]
@@ -181,7 +185,9 @@ let poUpOnAndOff = () => {
         let gogo = document.querySelector(".scrol-images-background")
 
     
-            let generateHeroContent = (dataPoint)=> {
+            let generateHeroContent = dataPoint => {
+
+
                 myHeroWriteup.innerHTML = ` 
                                 <h1 class="hero-head"><span class="Hero-head-span">${dataPoint.headerLeft}</span> ${dataPoint.headerRight}</h1>
                                 <p class= "hero-content">${dataPoint.content}</p>
@@ -194,14 +200,42 @@ let poUpOnAndOff = () => {
 
             }
 
-            
-        generateHeroContent(myBackgroundImages[0])
+         
+            function ebuzzy() {  
+
+                async function ebuzzyDelay() {
+            for (let i = 0; i < myBackgroundImages.length; i++) {
+            // let individualObjectsInArray = i
+            generateHeroContent(myBackgroundImages[i])
+            await new Promise(resolve => setTimeout(resolve, 4000))
+
+                 } 
+                 ebuzzyDelay()
+                 }
+                 ebuzzyDelay()
+         }
+
+           ebuzzy()
 
         // let backgroundInterval =
 
 
 
-
+         
+//         let ourDriveSectionContentsResults=""
+                                
+//         let generateMyOurDriveSectionContents = data => {
+            
+//          ourDriveSectionContentsResults +=          `
+//                                        <div class = " myOurDriveSectionBoxes" >
+//                                        <img src = "images/${data.logo}" alt = "${data.alt}" width = 50px>
+//                                        <h2> ${data.title} </h2>
+//                                        <p> ${data.content} </p>
+//                                         `
+//                              }  
+                             
+//  myOurDriveSectionContents.forEach(generateMyOurDriveSectionContents)
+//  myOurDriveSection.innerHTML = ourDriveSectionContentsResults
 
 
 // //the section two of the page, i.e the HERO page of the website ends here.
