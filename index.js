@@ -124,11 +124,13 @@ let popUpEventContentOnAndOff = () => {
         myPopUpDropDownContent.style.display = "flex"
         myPopUpArrow.textContent = "▲"
         myPopUpEventsDropDown.style.backgroundColor = "rgba(107, 195, 41)"
+        myPopUpEventsDropDown.style.color = "black"
         popUpDropDownLive = true 
     }else { 
          myPopUpDropDownContent.style.display = "none"
         myPopUpArrow.textContent = "▼"
         myPopUpEventsDropDown.style.backgroundColor = "inherit"
+        myPopUpEventsDropDown.style.color = "inherit"
         popUpDropDownLive = false 
         
     }
