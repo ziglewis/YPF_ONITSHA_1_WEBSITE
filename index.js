@@ -200,6 +200,9 @@ let poUpOnAndOff = () => {
 
             }
 
+            
+
+
                     
          
             function getBackgroundImage() {  
@@ -211,22 +214,26 @@ let poUpOnAndOff = () => {
             generateHeroContent(myBackgroundImages[i])
             myHeroFooterAnimation() 
 
+            // this code is controlling the 3 rectangular boxes or lines on the right hand side of the hero page
             let myFooterBackgroundImageLine1 = document.getElementById("scrol-images-writeup-right-line1")
             let myFooterBackgroundImageLine2 = document.getElementById("scrol-images-writeup-right-line2")
             let myFooterBackgroundImageLine3 = document.getElementById("scrol-images-writeup-right-line3")
+
+            
                 
-               function resetLineColors() {
-                myFooterBackgroundImageLine1.style.backgroundColor = "white"
+               function resetLineColors() { 
+                myFooterBackgroundImageLine1.style.backgroundColor = "white"  
                 myFooterBackgroundImageLine3.style.backgroundColor = "white"
                 myFooterBackgroundImageLine2.style.backgroundColor = "white"
 
                 }
-                    resetLineColors()
-
+                    resetLineColors() //actually with this, there will be a split second when all boxes are white, but its too fast, humans eyes can't spot it unless machines are used. You can try!
 
             if (i === 0) { myFooterBackgroundImageLine1.style.backgroundColor = "#6BC329" }
             else if (i === 1) { myFooterBackgroundImageLine2.style.backgroundColor = "#6BC329" }
-            else{ myFooterBackgroundImageLine3.style.backgroundColor = "#6BC329" }
+            else{ myFooterBackgroundImageLine3.style.backgroundColor = "#6BC329" } 
+
+            // The rectangular box code control ends here
 
 
 
@@ -240,8 +247,7 @@ let poUpOnAndOff = () => {
            getBackgroundImage()
    
            //30th may 2023
-
-           
+         
 
 
           
