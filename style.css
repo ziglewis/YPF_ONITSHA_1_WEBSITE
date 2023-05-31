@@ -57,7 +57,7 @@
 section {
 
     padding-top: 150px;
-    border: 4px solid goldenrod;
+    border: 4px solid white;
 }
 
 
@@ -118,7 +118,10 @@ body{
 .color-fill:hover, .pop-up-event-dropdown-contents:hover, .Hero-footer-line:hover{
     animation-name: color-fill;
     animation-duration: 0.3s;
-    animation-timing-function: linear;
+    animation-timing-function: linear;top: 0;
+    left: 0;
+    right: 0;
+
     background-image: linear-gradient(90deg, rgba(107, 195, 41, 1) 100%, rgba(107, 195, 41, 0)100%);
 }
 
@@ -196,7 +199,7 @@ body{
     /* padding: 160px; */
     color: #ffffff;
     box-sizing: border-box;
-    border: 4px solid indianred;
+    border: 4px solid green;
    
 
 }
@@ -246,7 +249,7 @@ hr {
 
 .innermost-background-image { /* Are you looking for the innermost background image. it is buried here only to be seen on transparency /opaque */
 
-    width: 100%;
+    width: 100vw;
     height: 700px;
     position: fixed;
     z-index: -10;
@@ -258,7 +261,9 @@ hr {
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
-
+    overflow-x: hidden;
+    /* border: 10px solid rgb(240, 232, 232); */
+    
 } /* Are you looking for the innermost background image. it is buried here only to be seen on transparency /opaque */
 
 .scrol-images-background{
@@ -299,6 +304,7 @@ hr {
     letter-spacing: 2px;
     font-weight:300;
     width: 500px;
+    max-width: 90%;
     
 }
 
@@ -400,6 +406,21 @@ hr {
         /* display: none;    */
     }
 
+    .scrol-images-background{
+
+        padding: 0px 2% 10px 2%;
+        width: 100%;
+        height: 60vh;
+
+    }
+
+    .scrol-images-writeup-right{
+       
+        right: 5%;
+        top: 50%;
+    }
+
+
 }
 
 
@@ -412,4 +433,4 @@ hr {
        
     }
 
-}
+} 
