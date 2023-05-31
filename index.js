@@ -192,7 +192,7 @@ let poUpOnAndOff = () => {
                                 <h1 class="hero-head"><span class="Hero-head-span">${dataPoint.headerLeft}</span> ${dataPoint.headerRight}</h1>
                                 <p class= "hero-content">${dataPoint.content}</p>
                                 <div class= "Hero-footer"> 
-                                    <a href = "${dataPoint.link}"> <div class= "Hero-footer-content">${dataPoint.footTag}</div> <div class="Hero-footer-line color-fill"> </div></a>
+                                    <a href = "${dataPoint.link}"> <div class= "Hero-footer-content">${dataPoint.footTag}</div> <div class="Hero-footer-line"> </div></a>
                                 </div>           
                                  `
                                  myHeroPageImages.style.backgroundImage = 'linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("' + dataPoint.imagePath +' ")'
@@ -200,42 +200,74 @@ let poUpOnAndOff = () => {
 
             }
 
+                    
          
             function getBackgroundImage() {  
 
+                
                 async function backgroundImageDelay() {
             for (let i = 0; i < myBackgroundImages.length; i++) {
             // let individualObjectsInArray = i
             generateHeroContent(myBackgroundImages[i])
-            await new Promise(resolve => setTimeout(resolve, 5000))
-
+            myHeroFooterAnimation() 
+            await new Promise(resolve => setTimeout(resolve, 5000)) // this guy actually does nothing but to delay the display time only
                  } 
-                 backgroundImageDelay()
+                 backgroundImageDelay() //when the loop is completed, the three background images would have taken turns, the async function again, meaning this code will never end as it is now recursively infinite.
                  }
-                 backgroundImageDelay()
+                 backgroundImageDelay() //this guy initializes the call for the async backgroundImageDelay function above.
          }
 
            getBackgroundImage()
+   
+           //30th may 2023
 
-        // let backgroundInterval =
+          
+ // this long myHeroFooterAnimation function below is here to ensure that when you hover on the footer elements the line box will get filled and when you mouse out a reveres animation will work. I have a switch in an if statement to checkmate that      
+         //The challenge was, if you write the contents of these functions without putting them in a function, the code will work once on loading, but when once the getBackgroundImage() function above generates a new inner html, the initial class appending and codes are gone and the desired effect wont be seen anymore.
+         // solution was to include them into a function and then add this function myHeroFooterAnimation() inside the getBackgroundImage() function, so anytime it generates a new inner html, it also initializes these codes and event listeners to it. Problem solved.
+ 
+        function myHeroFooterAnimation() { 
+
+                let myHeroFooterContent  = document.querySelector(".Hero-footer-content")
+                let myHeroFooterLine = document.querySelector(".Hero-footer-line")
+                let myHeroFooterLineReverseColorClass = false //my switch
+          
+            myHeroFooterContent.addEventListener("mouseover", function(){ //so when the write up is hovered, the line gets color filled animation
+
+                    myHeroFooterLine.classList.add("hero-color-fill")
+
+                    if(myHeroFooterLineReverseColorClass == true) {
+                    myHeroFooterLine.classList.remove("color-fill-reverse")
+                    myHeroFooterLineReverseColorClass = false
+                     }
+
+                   } )
 
 
+            myHeroFooterContent.addEventListener("mouseout", function(){ //so when the write up is moused out, the line gets color fill reverse animation
+                    myHeroFooterLine.classList.remove("hero-color-fill")
+                    myHeroFooterLine.classList.add("color-fill-reverse")
+                    myHeroFooterLineReverseColorClass = true
+                     } )
 
-         
-//         let ourDriveSectionContentsResults=""
-                                
-//         let generateMyOurDriveSectionContents = data => {
-            
-//          ourDriveSectionContentsResults +=          `
-//                                        <div class = " myOurDriveSectionBoxes" >
-//                                        <img src = "images/${data.logo}" alt = "${data.alt}" width = 50px>
-//                                        <h2> ${data.title} </h2>
-//                                        <p> ${data.content} </p>
-//                                         `
-//                              }  
-                             
-//  myOurDriveSectionContents.forEach(generateMyOurDriveSectionContents)
-//  myOurDriveSection.innerHTML = ourDriveSectionContentsResults
+            myHeroFooterLine.addEventListener("mouseout", function() {
+                       
+                        myHeroFooterLine.classList.add("color-fill-reverse") 
+                        myHeroFooterLineReverseColorClass = true
+                     } )
+
+            myHeroFooterLine.addEventListener("mouseover", function() {
+                       
+                        if(myHeroFooterLineReverseColorClass === true) {
+                        myHeroFooterLine.classList.remove("color-fill-reverse") 
+                        myHeroFooterLineReverseColorClass = false}
+                     } )
+
+                    } // here ends the myHeroFooterAnimation() function.
+                 
+                    
+      
+                   
 
 
 // //the section two of the page, i.e the HERO page of the website ends here.
