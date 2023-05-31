@@ -335,6 +335,7 @@ hr {
 #scrol-images-writeup-right-line1, #scrol-images-writeup-right-line2, #scrol-images-writeup-right-line3{
     width: 30px;
     height: 6px;
+    border-radius: 1px;
     background-color: #ffffff;
 }
 

@@ -210,6 +210,26 @@ let poUpOnAndOff = () => {
             // let individualObjectsInArray = i
             generateHeroContent(myBackgroundImages[i])
             myHeroFooterAnimation() 
+
+            let myFooterBackgroundImageLine1 = document.getElementById("scrol-images-writeup-right-line1")
+            let myFooterBackgroundImageLine2 = document.getElementById("scrol-images-writeup-right-line2")
+            let myFooterBackgroundImageLine3 = document.getElementById("scrol-images-writeup-right-line3")
+                
+               function resetLineColors() {
+                myFooterBackgroundImageLine1.style.backgroundColor = "white"
+                myFooterBackgroundImageLine3.style.backgroundColor = "white"
+                myFooterBackgroundImageLine2.style.backgroundColor = "white"
+
+                }
+                    resetLineColors()
+
+
+            if (i === 0) { myFooterBackgroundImageLine1.style.backgroundColor = "#6BC329" }
+            else if (i === 1) { myFooterBackgroundImageLine2.style.backgroundColor = "#6BC329" }
+            else{ myFooterBackgroundImageLine3.style.backgroundColor = "#6BC329" }
+
+
+
             await new Promise(resolve => setTimeout(resolve, 5000)) // this guy actually does nothing but to delay the display time only
                  } 
                  backgroundImageDelay() //when the loop is completed, the three background images would have taken turns, the async function again, meaning this code will never end as it is now recursively infinite.
@@ -221,12 +241,16 @@ let poUpOnAndOff = () => {
    
            //30th may 2023
 
+           
+
+
           
  // this long myHeroFooterAnimation function below is here to ensure that when you hover on the footer elements the line box will get filled and when you mouse out a reveres animation will work. I have a switch in an if statement to checkmate that      
          //The challenge was, if you write the contents of these functions without putting them in a function, the code will work once on loading, but when once the getBackgroundImage() function above generates a new inner html, the initial class appending and codes are gone and the desired effect wont be seen anymore.
          // solution was to include them into a function and then add this function myHeroFooterAnimation() inside the getBackgroundImage() function, so anytime it generates a new inner html, it also initializes these codes and event listeners to it. Problem solved.
  
         function myHeroFooterAnimation() { 
+                    
 
                 let myHeroFooterContent  = document.querySelector(".Hero-footer-content")
                 let myHeroFooterLine = document.querySelector(".Hero-footer-line")
