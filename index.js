@@ -159,8 +159,8 @@ let poUpOnAndOff = () => {
                                             
                                 { 
                                 imagePath: "images/megaSummit.jpg",
-                                headerLeft: "YOUNG",
-                                headerRight: "PROFESSIONALS FORUM",
+                                headerLeft: "Young",
+                                headerRight: "Professionals Forum",
                                 content: "We have a commitment to bring about the change we desire in our communities.",
                                 footTag: "JOIN US",
                                 link: "wwwwwww.arg",

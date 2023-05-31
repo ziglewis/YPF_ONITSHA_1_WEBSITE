@@ -89,7 +89,7 @@ body{
     display: flex;
     background-color: #296a12;
     justify-content: space-between;
-    padding:12px 180px;
+    padding:12px 170px 12px 185px;
     position: fixed;
     width: 100%;
     margin: 0px;
@@ -104,6 +104,7 @@ body{
 .my-nav-bar h6 {
     font-size:x-small;
     font-weight: 1000;
+    letter-spacing:2px ;
 }
 
 .Other-bars {
@@ -112,6 +113,7 @@ body{
     align-items: center;
     font-size: 14px;
     cursor:pointer;
+    letter-spacing: 1px;
 }
 .color-fill:hover, .pop-up-event-dropdown-contents:hover, .Hero-footer-line:hover{
     animation-name: color-fill;
@@ -154,7 +156,7 @@ body{
     width: 150px;
     box-shadow: 0px 8px 16px 0px #296a12;
     z-index: 4;
-    right: 440px;
+    right: 452px;
     cursor:pointer;
     top: 67px;
     text-align: justify;
@@ -282,9 +284,9 @@ hr {
 }
 .hero-head{
     color: #6BC329;
-    font-size: 26.6px;
+    font-size: 42px;
     font-weight:600;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 .Hero-head-span {
@@ -293,7 +295,7 @@ hr {
 
 .hero-content{
     line-height: 2rem;
-    font-size: small;
+    font-size:16.6px;
     letter-spacing: 2px;
     font-weight:300;
     width: 500px;
@@ -311,7 +313,7 @@ hr {
     text-decoration: none;
     color: #ffffff;
     font-size: 15px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-weight: 400;
 }
 .Hero-footer-line{
@@ -326,9 +328,9 @@ hr {
  
 }
 
-.Hero-footer {
-    /* border: 2px solid blue; */
-}
+/* .Hero-footer {
+     border: 2px solid blue; 
+} */
 
 #scrol-images-writeup-right-line1, #scrol-images-writeup-right-line2, #scrol-images-writeup-right-line3{
     width: 30px;
@@ -363,7 +365,7 @@ hr {
     }
 
     #Event-drop-down {
-        right: 278px;
+        right: 302px;
        
     }
 
@@ -372,7 +374,7 @@ hr {
 
 
 
-@media (max-width: 760px) {
+@media (max-width: 800px) {
 
     .minimize-icon{
         display: block;
