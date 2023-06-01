@@ -202,16 +202,20 @@ let poUpOnAndOff = () => {
 
             
 
-
-                    
+            let gogo = 0
+            let eventTime = 4000
+            let yam = 0
          
             function getBackgroundImage() {  
 
+               
+
                 
                 async function backgroundImageDelay() {
-            for (let i = 0; i < myBackgroundImages.length; i++) {
+
+            
             // let individualObjectsInArray = i
-            generateHeroContent(myBackgroundImages[i])
+            generateHeroContent(myBackgroundImages[gogo])
             myHeroFooterAnimation() 
 
             // this code is controlling the 3 rectangular boxes or lines on the right hand side of the hero page
@@ -219,27 +223,56 @@ let poUpOnAndOff = () => {
             let myFooterBackgroundImageLine2 = document.getElementById("scrol-images-writeup-right-line2")
             let myFooterBackgroundImageLine3 = document.getElementById("scrol-images-writeup-right-line3")
 
-            
+                    function callbackBackgroundImage() { 
+                        eventTime = 2000
+                        yam = 0
+                        generateHeroContent(myBackgroundImages[gogo])
+                        myHeroFooterAnimation() 
+                        resetLineColors()
+                    }
+
+                    if ((eventTime <= 2100) && (yam>=1)) { eventTime = 4000} // this is to ensure the delay time does not double for the background images to display
+
+                myFooterBackgroundImageLine1.addEventListener("click", function(){
+                         gogo = 0
+                         callbackBackgroundImage()
+                                })
                 
+                 myFooterBackgroundImageLine2.addEventListener("click", function(){
+                            gogo = 1
+                            callbackBackgroundImage()
+                                })
+
+                myFooterBackgroundImageLine3.addEventListener("click", function(){
+                          gogo = 2
+                        callbackBackgroundImage()
+                                        })
+                    
                function resetLineColors() { 
                 myFooterBackgroundImageLine1.style.backgroundColor = "white"  
                 myFooterBackgroundImageLine3.style.backgroundColor = "white"
                 myFooterBackgroundImageLine2.style.backgroundColor = "white"
 
-                }
-                    resetLineColors() //actually with this, there will be a split second when all boxes are white, but its too fast, humans eyes can't spot it unless machines are used. You can try!
+                  //  resetLineColors() //actually with this, there will be a split second when all boxes are white, but its too fast, humans eyes can't spot it unless machines are used. You can try!
 
-            if (i === 0) { myFooterBackgroundImageLine1.style.backgroundColor = "#6BC329" }
-            else if (i === 1) { myFooterBackgroundImageLine2.style.backgroundColor = "#6BC329" }
+            if (gogo === 0) { myFooterBackgroundImageLine1.style.backgroundColor = "#6BC329" }
+            else if (gogo === 1) { myFooterBackgroundImageLine2.style.backgroundColor = "#6BC329" }
             else{ myFooterBackgroundImageLine3.style.backgroundColor = "#6BC329" } 
+
+                    }
+                    resetLineColors()
 
             // The rectangular box code control ends here
 
+            gogo += 1
+            if(gogo === 3) { gogo = 0}     // here is the looping technology      
+                    yam+=1
 
+            await new Promise(resolve => setInterval(resolve, eventTime)) // this guy actually does nothing but to delay the display time only
+            
+                    
 
-            await new Promise(resolve => setTimeout(resolve, 5000)) // this guy actually does nothing but to delay the display time only
-                 } 
-                 backgroundImageDelay() //when the loop is completed, the three background images would have taken turns, the async function again, meaning this code will never end as it is now recursively infinite.
+                 getBackgroundImage() //when the loop is completed, the three background images would have taken turns, the async function again, meaning this code will never end as it is now recursively infinite.
                  }
                  backgroundImageDelay() //this guy initializes the call for the async backgroundImageDelay function above.
          }
