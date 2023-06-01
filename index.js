@@ -318,7 +318,7 @@ let poUpOnAndOff = () => {
 
                     } // here ends the myHeroFooterAnimation() function.
                  
-                    
+  // Its a New month. June 1st. we go again.
       
                    
 
