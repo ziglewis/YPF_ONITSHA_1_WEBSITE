@@ -5,22 +5,22 @@
 let myOurDriveSection = document.querySelector(".our-drive-3box-container")
 
 let myOurDriveSectionContents = [ 
-                                {logo: "vision-icon.png",
-                                fab: '<i class="fa fa-users" aria-hidden="true"></i>',
+                                {
+                                fab: '<i class="fa fa-paint-brush" aria-hidden="true"></i>',
                                 title: "Vision",
                                 alt: "vision icon",
                                 content: "To be the frontrunner in raising a generation of young adults known as paragons in their fields of endeavors."
                                 },
                                 
-                                {logo: "mission-icon.png",
-                                fab: '<i class="fa fa-users" aria-hidden="true"></i>',
+                                {
+                                fab: '<i class="fa fa-building" aria-hidden="true"></i>',
                                 title: "Mission",
                                 alt: "mission icon",
                                 content: "To develop, preserve and commission young adult for impact. To raise captains of industry excellence and godliness as their statement."
                                 },
 
-                                {logo: "membership-icon.png",
-                                 fab: '<i class="fa fa-users" aria-hidden="true"></i>',
+                                {
+                                fab: '<i class="fa fa-users" aria-hidden="true"></i>',
                                 title: "Membership",
                                 alt: "membership icon",
                                 content: "Undergraduates, Corp Members, Fresh Graduate, Young Career Executives, Civil servants, Artisans & Entrepreneurs"
@@ -34,8 +34,7 @@ let myOurDriveSectionContents = [
                        
                     ourDriveSectionContentsResults +=          `
                                                   <div class = "myOurDriveSectionBoxes" >
-                                                  ${data.fab}
-                                                  <img src = "images/${data.logo}" alt = "${data.alt}" width = 60px>
+                                                    <h1> ${data.fab} </h1>
                                                   <h2> ${data.title} </h2>
                                                   <p> ${data.content} </p> 
                                                   </div>

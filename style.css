@@ -447,21 +447,28 @@ hr {
     background-color: #ffffff;
     min-width: 200px;
     color: rgb(98, 98, 98);
-    padding: 50px 30px;
+    padding: 35px 30px 60px;
     line-height: 30px;
     box-sizing: border-box;
     font-size: 14px;
 }
 
-.myOurDriveSectionBoxes:hover, .myOurDriveSectionBoxes:hover h2{
+.myOurDriveSectionBoxes:hover, .myOurDriveSectionBoxes:hover h2, .myOurDriveSectionBoxes:hover h1{
     background-color: #6bc329;
     color: #ffffff ;
+}
+
+.myOurDriveSectionBoxes h1{ 
+    color: #6bc329;
+    font-size: 2.5rem;
+
 }
 
 .myOurDriveSectionBoxes h2{
 
     color: black;
     font-size: 18px;
+    line-height: 14.5px;
 
 }
 
