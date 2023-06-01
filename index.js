@@ -204,17 +204,11 @@ let poUpOnAndOff = () => {
 
             let gogo = 0
             let eventTime = 4000
-            let yam = 0
-         
-            function getBackgroundImage() {  
-
-               
-
-                
-                async function backgroundImageDelay() {
-
             
-            // let individualObjectsInArray = i
+         
+            function getBackgroundImage() { 
+                
+                function backgroundImageDelay() {
             generateHeroContent(myBackgroundImages[gogo])
             myHeroFooterAnimation() 
 
@@ -224,17 +218,18 @@ let poUpOnAndOff = () => {
             let myFooterBackgroundImageLine3 = document.getElementById("scrol-images-writeup-right-line3")
 
                     function callbackBackgroundImage() { 
-                        eventTime = 2000
-                        yam = 0
+                
+                        clearInterval(john)
                         generateHeroContent(myBackgroundImages[gogo])
                         myHeroFooterAnimation() 
                         resetLineColors()
+                        john = setInterval(getBackgroundImage, 4000)
                     }
 
-                    if ((eventTime <= 2100) && (yam>=1)) { eventTime = 4000} // this is to ensure the delay time does not double for the background images to display
+                  //  if ((eventTime <= 2100) && (yam>=1)) { eventTime = 4000} // this is to ensure the delay time does not double for the background images to display
 
                 myFooterBackgroundImageLine1.addEventListener("click", function(){
-                         gogo = 0
+                        gogo = 0
                          callbackBackgroundImage()
                                 })
                 
@@ -266,18 +261,13 @@ let poUpOnAndOff = () => {
 
             gogo += 1
             if(gogo === 3) { gogo = 0}     // here is the looping technology      
-                    yam+=1
-
-            await new Promise(resolve => setInterval(resolve, eventTime)) // this guy actually does nothing but to delay the display time only
-            
                     
-
-                 getBackgroundImage() //when the loop is completed, the three background images would have taken turns, the async function again, meaning this code will never end as it is now recursively infinite.
-                 }
+                }
                  backgroundImageDelay() //this guy initializes the call for the async backgroundImageDelay function above.
          }
 
-           getBackgroundImage()
+         getBackgroundImage()
+         let john = setInterval(getBackgroundImage, eventTime)
    
            //30th may 2023
          
