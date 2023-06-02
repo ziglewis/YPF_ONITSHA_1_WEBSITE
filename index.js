@@ -327,6 +327,30 @@ let poUpOnAndOff = () => {
                    
 
 
+ // Get the div element with the ID "monkey".
+ const monkey = document.getElementById('monkey');
+
+
+// Set a listener for the "scroll" event.
+
+
+  checkVisibility = () => {
+
+ // Check if the div element is scrolled into view.
+ if (monkey.getBoundingClientRect().top < window.innerHeight/2 ) {
+
+   // Change the background color to red.
+   monkey.style.backgroundColor = 'red';
+   
+   monkey.innerText = "I made it at last hurrayyyyy" + window.innerHeight
+   
+   window.removeEventListener('scroll', checkVisibility )
+   
+ }
+}
+
+window.addEventListener('scroll', checkVisibility );
+
 // //the section two of the page, i.e the HERO page of the website ends here.
 
 // JS FOR HOME PAGE ENDS HERE
