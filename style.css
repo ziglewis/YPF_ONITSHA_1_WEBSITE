@@ -57,11 +57,8 @@
 
 
 section {
-
     padding-top: 150px;
-    
-    
-    background-color: rgba(0, 255, 55, 0.158);
+    background-color: rgb(37, 34, 34);
 }
 
 
@@ -70,11 +67,7 @@ body{
     box-sizing: border-box;
     font-family: Verdana, Tahoma, sans-serif;
     /* padding: 20px 200px; */
-    background-image: url(images/page1samplePic1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    
+   
 }
 #logo { display: flex;
     align-items: center;
@@ -251,24 +244,7 @@ hr {
 
 /* SECTION TWO STARTED I.E HERO PAGE */
 
-.innermost-background-image { /* Are you looking for the innermost background image. it is buried here only to be seen on transparency /opaque */
 
-    width: 100vw;
-    height: 700px;
-    position: fixed;
-    z-index: -1;
-    border: 3px solid greenyellow;
-    top : 60px;
-    transition-delay: 1s;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/backgroundImage2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    /* border: 10px solid rgb(240, 232, 232); */
-    
-} /* Are you looking for the innermost background image. it is buried here only to be seen on transparency /opaque */
 
 .scrol-images-background{
 
@@ -338,9 +314,6 @@ hr {
  
 }
 
-/* .Hero-footer {
-     border: 2px solid blue; 
-} */
 
 #scrol-images-writeup-right-line1, #scrol-images-writeup-right-line2, #scrol-images-writeup-right-line3{
     width: 30px;
@@ -370,6 +343,11 @@ hr {
 .section-3-WeAreYPF {
     display: flex;
     background-color: #ffffff;
+    
+    /* background:  linear-gradient(rgba(240, 229, 229, 0.5), rgba(0, 0, 0, 0.5)), url("images/skill3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
     justify-content:center;
     color: rgb(98, 98, 98);
     gap: 2%;
