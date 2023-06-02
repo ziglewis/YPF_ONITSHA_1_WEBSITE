@@ -452,7 +452,59 @@ hr {
 
 }
 
+/* SECTION 5 WE HAVE SOMETHING TO BE PROUD OF */
 
+.our-pride-section{
+    text-align: center;
+    padding: 50px 12%;
+    /* border: 4px solid indianred; */
+    background:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/backgroundImage2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+
+}
+
+.our-pride-section h2{ 
+
+    color: #6bc329;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    /* word-spacing: 2px; */
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.our-pride-section-groups {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+
+}
+
+.our-pride-section-groups  h1{ 
+    
+    font-size: 2.5rem;
+
+}
+.our-pride-section-groups  h2{ 
+
+    font-size: 35px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    font-weight: 600;
+
+}
+.our-pride-section-groups  h3{ 
+
+    font-size: 20px;
+    line-height: 16px;
+    font-weight: 700;
+
+}
+    
 
 
 
