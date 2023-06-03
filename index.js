@@ -208,14 +208,14 @@ let poUpOnAndOff = () => {
 
             
 
-            let gogo = 0
+            let elementIndex = 0
             let eventTime = 4000
             
          
             function getBackgroundImage() { 
                 
                 function backgroundImageDelay() {
-            generateHeroContent(myBackgroundImages[gogo])
+            generateHeroContent(myBackgroundImages[elementIndex])
             myHeroFooterAnimation() 
 
             // this code is controlling the 3 rectangular boxes or lines on the right hand side of the hero page
@@ -225,27 +225,27 @@ let poUpOnAndOff = () => {
 
                     function callbackBackgroundImage() { 
                 
-                        clearInterval(john)
-                        generateHeroContent(myBackgroundImages[gogo])
+                        clearInterval(backgroundChangerTimer)
+                        generateHeroContent(myBackgroundImages[elementIndex])
                         myHeroFooterAnimation() 
                         resetLineColors()
-                        john = setInterval(getBackgroundImage, 4000)
+                        backgroundChangerTimer = setInterval(getBackgroundImage, 4000)
                     }
 
                   //  if ((eventTime <= 2100) && (yam>=1)) { eventTime = 4000} // this is to ensure the delay time does not double for the background images to display
 
                 myFooterBackgroundImageLine1.addEventListener("click", function(){
-                        gogo = 0
+                        elementIndex = 0
                          callbackBackgroundImage()
                                 })
                 
                  myFooterBackgroundImageLine2.addEventListener("click", function(){
-                            gogo = 1
+                            elementIndex = 1
                             callbackBackgroundImage()
                                 })
 
                 myFooterBackgroundImageLine3.addEventListener("click", function(){
-                          gogo = 2
+                          elementIndex = 2
                         callbackBackgroundImage()
                                         })
                     
@@ -256,8 +256,8 @@ let poUpOnAndOff = () => {
 
                   //  resetLineColors() //actually with this, there will be a split second when all boxes are white, but its too fast, humans eyes can't spot it unless machines are used. You can try!
 
-            if (gogo === 0) { myFooterBackgroundImageLine1.style.backgroundColor = "#6BC329" }
-            else if (gogo === 1) { myFooterBackgroundImageLine2.style.backgroundColor = "#6BC329" }
+            if (elementIndex === 0) { myFooterBackgroundImageLine1.style.backgroundColor = "#6BC329" }
+            else if (elementIndex === 1) { myFooterBackgroundImageLine2.style.backgroundColor = "#6BC329" }
             else{ myFooterBackgroundImageLine3.style.backgroundColor = "#6BC329" } 
 
                     }
@@ -265,15 +265,15 @@ let poUpOnAndOff = () => {
 
             // The rectangular box code control ends here
 
-            gogo += 1
-            if(gogo === 3) { gogo = 0}     // here is the looping technology      
+            elementIndex += 1
+            if(elementIndex === 3) { elementIndex = 0}     // here is the looping technology      
                     
                 }
                  backgroundImageDelay() //this guy initializes the call for the async backgroundImageDelay function above.
          }
 
          getBackgroundImage()
-         let john = setInterval(getBackgroundImage, eventTime)
+         let backgroundChangerTimer = setInterval(getBackgroundImage, eventTime)
    
            //30th may 2023
          
@@ -323,14 +323,39 @@ let poUpOnAndOff = () => {
                      } )
 
                     } // here ends the myHeroFooterAnimation() function.
+
+
                  
   // Its a New month. June 1st. we go again.
       
                    
 
+  // CODE HANDLING THE SECTION FIVE ESPECIALLY THE COUNTER YOU SEE ON THE PAGE
+   
+  let myCalenderCounter = document.getElementById("count-calendar") 
+  let myMembersCounter = document.getElementById("count-members")
+  let myTraineesCounter = document.getElementById("count-trainees")
+  let myAwardeeCounter = document.getElementById("count-awardees")
+   
 
- // Get the div element with the ID "monkey".
- const monkey = document.getElementById('monkey');
+                      let maximumCount = 0
+                let  countUpALLBoxes = () => {
+
+                    if (maximumCount > 800) { clearInterval(setCounterInterval)}
+                    if (maximumCount <= 350) {  myCalenderCounter.textContent = maximumCount  }
+                    if (maximumCount <= 528) { myMembersCounter.textContent = maximumCount }
+                    if (maximumCount <=  205  ) { myAwardeeCounter.textContent = maximumCount  }
+                  
+                    myTraineesCounter.textContent = maximumCount
+                    maximumCount +=1                    
+                  }
+
+  
+
+                
+
+ // Get the div element with the ID "myCounterZone".
+ const myCounterZone = document.getElementById('counterZone');
 
 
 // Set a listener for the "scroll" event.
@@ -339,12 +364,12 @@ let poUpOnAndOff = () => {
   checkVisibility = () => {
 
  // Check if the div element is scrolled into view.
- if (monkey.getBoundingClientRect().top < window.innerHeight/2 ) {
+ if (myCounterZone.getBoundingClientRect().top < window.innerHeight/ 1.5 ) {
 
    // Change the background color to red.
-   monkey.style.backgroundColor = 'red';
+   myCounterZone.style.backgroundColor = 'red';
+   let setCounterInterval = setInterval(countUpALLBoxes, 12 )
    
-   monkey.innerText = "I made it at last hurrayyyyy" + window.innerHeight
    
    window.removeEventListener('scroll', checkVisibility )
    
@@ -353,6 +378,6 @@ let poUpOnAndOff = () => {
 
 window.addEventListener('scroll', checkVisibility );
 
-// //the section two of the page, i.e the HERO page of the website ends here.
+
 
 // JS FOR HOME PAGE ENDS HERE
