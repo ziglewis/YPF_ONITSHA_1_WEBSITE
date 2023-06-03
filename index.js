@@ -13,7 +13,7 @@ let myOurDriveSectionContents = [
                                 },
                                 
                                 {
-                                fab: '<i class="fa fa-building-o" aria-hidden="true"></i>',
+                                fab: '<i class="fa fa-building" aria-hidden="true"></i>',
                                 title: "Mission",
                                 alt: "mission icon",
                                 content: "To develop, preserve and commission young adult for impact. To raise captains of industry excellence and godliness as their statement."
