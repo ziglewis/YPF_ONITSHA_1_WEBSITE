@@ -483,6 +483,7 @@ hr {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 20px;
+    margin-top: -30px;
 
 }
 
@@ -497,6 +498,7 @@ hr {
     line-height: 35px;
     letter-spacing: 5px;
     font-weight: 600;
+    margin-top: -10px;
 
 }
 .our-pride-section-groups  h3{ 
