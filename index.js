@@ -188,6 +188,8 @@ let poUpOnAndOff = () => {
         let myHeroWriteup = document.querySelector(".scrol-images-writeup-left")
         let myHeroPageImages = document.querySelector(".scrol-images-background")
 
+
+                                          function garuba() {this.fadeIn(2000)}
     
             let generateHeroContent = dataPoint => {
 
@@ -200,7 +202,7 @@ let poUpOnAndOff = () => {
                                 </div>           
                                  `
                                  myHeroPageImages.style.backgroundImage = 'linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("' + dataPoint.imagePath +' ")'
-                               
+
 
             }
 
