@@ -348,7 +348,7 @@ hr {
     display: grid;
     background-color: #ffffff;
     grid-template-columns: repeat(auto-fit, minmax( 450px, 1fr));
-    /* background:  linear-gradient(rgba(240, 229, 229, 0.5), rgba(0, 0, 0, 0.5)), url("images/skill3.jpg");
+    /* background:  linear-gradient(rgba(240, 229, 229, 0.5), rgba(0, 0, 0, 0.5)), url("images/skill3.jpg"); 
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; */
@@ -361,7 +361,7 @@ hr {
     z-index: 2;
     line-height: 30px;
     font-family: 'Times New Roman', Times, serif;
-  border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .section-3-WeAreYPF-left, .section-3-WeAreYPF-right {
