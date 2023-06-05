@@ -364,7 +364,7 @@ let poUpOnAndOff = () => {
   checkVisibility = () => {
 
  // Check if the div element is scrolled into view.
- if (myCounterZone.getBoundingClientRect().top < window.innerHeight/ 1.5 ) {
+ if (myCounterZone.getBoundingClientRect().top < window.innerHeight/ 1.2 ) {
 
    // Change the background color to red.
    myCounterZone.style.backgroundColor = 'red';
