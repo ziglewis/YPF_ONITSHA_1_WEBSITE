@@ -347,7 +347,7 @@ hr {
 .section-3-WeAreYPF {
     display: grid;
     background-color: #ffffff;
-    grid-template-columns: repeat(auto-fit, minmax( 350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax( 450px, 1fr));
     /* background:  linear-gradient(rgba(240, 229, 229, 0.5), rgba(0, 0, 0, 0.5)), url("images/skill3.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -377,6 +377,7 @@ hr {
 .section-3-WeAreYPF-left h1 {
     color: black;
     font-size: 26Px;
+    text-align:left;
 }
 
 .section-3-WeAreYPF-left button {
