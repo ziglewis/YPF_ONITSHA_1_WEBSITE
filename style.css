@@ -524,6 +524,16 @@ hr {
 
 }
     
+.what-we-do-group-items {
+    display: flex;
+
+    border: 3px solid black;
+
+}
+
+.what-we-do-group-items-writeup{
+background-color: #f0f0f0
+}
 
 
 
