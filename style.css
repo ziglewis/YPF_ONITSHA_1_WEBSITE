@@ -556,13 +556,14 @@ hr {
     /* background-image: url("images/career.jpeg");
     background-repeat: no-repeat;
     background-size: cover; */
+    z-index: 1;
     
 }
 
 .what-we-do-group-items-image img {
     width: 400px;
     height: 100%;
-
+    z-index: -1;
 }
 
 .what-we-do-group-items-writeup{
@@ -570,6 +571,7 @@ hr {
 background-color: #f0f0f0;
 padding: 5.5%;
 width: 100%;
+z-index: 2;
 }
 
 .what-we-do-group-items-writeup h2{
@@ -609,17 +611,38 @@ font-weight: 400;
  }
 
  .what-we-do-group-items-writeup-arrow-left {
+    transition: 0.3s;
     float: left;
     /* margin-left: -18%;
     margin-top: -110px; */
-    left: 20px;
+    /* left: 20px; */
     color:#f0f0f0;
     text-align: start;
     font-size: 4rem;
     padding:initial;
     Margin-left: -20%;
-    margin-top: -50px;
+    margin-top: 50px;
+
+ }
+
+ .what-we-do-group-items:hover .what-we-do-group-items-writeup-arrow-right, .what-we-do-group-items:hover .what-we-do-group-items-writeup-arrow-left {
+        transition: 0.3s;
+        color: rgb(37, 34, 34);
+
+ }
+
+ .what-we-do-group-items-writeup-arrow-right {
+    transition: 0.3s;
+    float: right;
+    /* margin-left: -18%;
+    margin-top: -110px; */
     
+    color:#f0f0f0;
+    text-align: end;
+    font-size: 4rem;
+    Margin-right: -25%;
+    margin-top: 50px;
+    /* z-index: 4; */
 
  }
 
