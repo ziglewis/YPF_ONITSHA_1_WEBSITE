@@ -189,7 +189,7 @@ let poUpOnAndOff = () => {
         let myHeroPageImages = document.querySelector(".scrol-images-background")
 
 
-                                          function garuba() {this.fadeIn(2000)}
+                                          // function garuba() {this.fadeIn(2000)}
     
             let generateHeroContent = dataPoint => {
 
