@@ -55,7 +55,6 @@
 
 
 
-
 section {
     padding-top: 150px;
     background-color: rgb(37, 34, 34);
@@ -567,6 +566,7 @@ hr {
 }
 
 .what-we-do-group-items-writeup{
+    transition: 0.3s;
 background-color: #f0f0f0;
 padding: 5.5%;
 width: 100%;
@@ -608,6 +608,29 @@ font-weight: 400;
     opacity: 0.5;
  }
 
+ .what-we-do-group-items-writeup-arrow-left {
+    float: left;
+    /* margin-left: -18%;
+    margin-top: -110px; */
+    left: 20px;
+    color:#f0f0f0;
+    text-align: start;
+    font-size: 4rem;
+    padding:initial;
+    Margin-left: -20%;
+    margin-top: -50px;
+    
+
+ }
+
+ /* SECTION 6 OF WHAT WE DO ENDS HERE */
+
+/* SECTION 7 OF OUR TESTIMONIALS SLIDING IN STARTS HERE  */
+
+
+
+/* SECTION 7 OF OUR TESTIMONIALS SLIDING IN ENDS HERE  */
+
 
 @media (max-width: 1160px) {
 
@@ -622,19 +645,6 @@ font-weight: 400;
     }
 
 }
-
-/* SECTION 6 OF WHAT WE DO ENDS HERE */
-
-/* SECTION 7 OF OUR TESTIMONIALS SLIDING IN STARTS HERE  */
-
-
-
-/* SECTION 7 OF OUR TESTIMONIALS SLIDING IN ENDS HERE  */
-
-
-
-
-
 
 
 @media (max-width: 800px) {
