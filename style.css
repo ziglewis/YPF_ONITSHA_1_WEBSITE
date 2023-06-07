@@ -651,6 +651,24 @@ font-weight: 400;
 /* SECTION 7 OF OUR TESTIMONIALS SLIDING IN STARTS HERE  */
 
 
+.testimonial-boxes-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: scroll;
+    padding: 12%;
+    border: 3px solid red;
+    width: 100vw;
+
+
+}
+
+.each-testimonial-box {
+    border: 3px solid blue;
+    width: 800px;
+}
+
+
 
 /* SECTION 7 OF OUR TESTIMONIALS SLIDING IN ENDS HERE  */
 
