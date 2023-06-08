@@ -382,8 +382,14 @@ window.addEventListener('scroll', checkVisibility );
 
 // SWIPPER JS CODE STARTS
 
+
+
+
+
+
+
 let swiper = new Swiper('.swiper', {
-  // Optional parameters
+ 
   direction: 'horizontal',
   loop: true,
   slidesPerView: "1",
@@ -391,18 +397,14 @@ let swiper = new Swiper('.swiper', {
 	delay: 3000,
   disableOnInteraction: false,
   pauseOnMouseEnter: true,
-  // reverseDirection: true
+ 
 	},
-
-  // effect: 'cube',
-  // cubeEffect: {
-  //   slideShadows: false,
-  // },
 
 
     spaceBetween: 20,
     speed: 800,
     timingFunction: "linear",
+    
 
     breakpoints: {
       
@@ -413,33 +415,40 @@ let swiper = new Swiper('.swiper', {
       
     },
     
-
-    // transitionTiming: {
-    //   duration: 1000,
-    //   timingFunction: "linear",
-    //   delay: 200,
-    // },
-  // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
-    // Navigation arrows
   navigation: {
     nextEl: '.testimonial-scroll-btn-right',
-    // prevEl: '.swiper-button-prev',
     prevEl: ".testimonial-scroll-btn-left"
   },
 
+
+
 });
+ 
+
+
+
+
 
 let mySwiperWrapper = document.querySelector(".swiper-wrapper")
+let mySwiperLeftBtn = document.querySelector(".swipe-left")
+let mySwiperRightBtn = document.querySelector(".swipe-right")
 
 mySwiperWrapper.addEventListener("mouseenter", function(){
 
-  swiper.autoplay.pause()
+  mySwiperLeftBtn.classList.remove("testimonial-scroll-btn-left")
+  mySwiperRightBtn.classList.remove("testimonial-scroll-btn-right")
+  swiper.disable()
 
 })
 
+mySwiperWrapper.addEventListener("mouseleave", function(){
+
+  swiper.enable()
+
+})
+
+.classList.remove("hero-color-fill")
+                    myHeroFooterLine.classList.add("color-fill-reverse")
 
 
    
