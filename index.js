@@ -378,6 +378,39 @@ let poUpOnAndOff = () => {
 
 window.addEventListener('scroll', checkVisibility );
 
+// SWIPPER JS CODE STARTS
+
+let swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: "2",
+  
+  autoplay: {
+		delay: 3000,
+		disableOnInteraction: false
+    
+	},
+    spaceBetween: 20,
+  // If we need pagination
+  // pagination: {
+  //   el: '.swiper-pagination',
+  // },
+    // Navigation arrows
+  navigation: {
+    nextEl: '.testimonial-scroll-btn-right',
+    // prevEl: '.swiper-button-prev',
+    prevEl: ".testimonial-scroll-btn-left"
+  },
+  
+});
+
+
+   
+
+
+// SWIPER JS CODE ENDS
+
 
 
 // JS FOR HOME PAGE ENDS HERE

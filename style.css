@@ -651,28 +651,32 @@ font-weight: 400;
 /* SECTION 7 OF OUR TESTIMONIALS SLIDING IN STARTS HERE  */
 
 
-/* .testimonial-boxes-container{
-    display: flex;
+
+.testimonials-section{
+    text-align: center;
+    padding: 12%;
+}
+.testimonial-boxes-container{
+    /* display: flex;
     flex-direction: row;
     gap: 20px;
-    overflow-x: scroll;
-    padding: 12%;
+    overflow-x: scroll; */
     border: 3px solid red;
-    width: 100vw;
+    /* width: 100vw; */
 
 
 }
 
 .each-testimonial-box {
     border: 3px solid blue;
-    width: 100%;
-} */
+    /* width: 500px; */
+}
 
 
 .swiper {
-    width: 600px;
-    height: 300px;
-  }
+  /* width: 600px;
+  height: 300px; */
+}
 
 
 /* SECTION 7 OF OUR TESTIMONIALS SLIDING IN ENDS HERE  */

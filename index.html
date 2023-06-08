@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <title>Young Professionals Forum Anambra-1 Official website</title>
 </head>
 
@@ -227,94 +227,49 @@
                 <div class="testimonials-section"><!-- The 7th section of Our Testimonials starts here -->
                     <h2>Our Testimonials</h2>
 
-                    <!-- swiper js -->
+                    <div class="swiper testimonial-boxes-container">   <!-- The testimonial container starts here here -->
+                            <div class="swiper-wrapper">
+                      
+                                    <div class="swiper-slide each-testimonial-box">
+                                              <p>The training is one of a kind and really an eye opener for everyone of us to harness our potentials. </p>
+                                              <h5>Rhema Nwadike</h2>
+                                              <h5 class="profession">Digital Smart Surveyor</p>
+                                          </div>
 
-                    <div class="swiper">
-                      <!-- Additional required wrapper -->
-                      <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">Slide 1
-                                  
-                                    <p>The training is one of a kind and really an eye opener for everyone of us to harness our potentials. </p>
-                                    <h5>Rhema Nwadike</h2>
-                                    <h5 class="profession">Digital Smart Surveyor</p>
-                                
+                                          <div class="swiper-slide each-testimonial-box">
+                                              <p>The entirety of events in the YPF has challenged me to keep up steeping on my game and think more globally. </p>
+                                              <h5>Zigede Lewis Jr.</h2>
+                                              <h5 class="profession">GIS | Web Developer | Geoscientist</p>
+                                          </div>
 
+                                          <div class="swiper-slide each-testimonial-box">
+                                              <p>The cyber security skills I acquired showed me a ray of light on how to develope a career in cyber security. </p>
+                                              <h5>Queen Victoria</h2>
+                                              <h5 class="profession">Archeologist</p>
+                                          </div>
 
-                        </div>
+                                          <div class="swiper-slide each-testimonial-box">
+                                              <p>The cyber security training I took helped me to integrate cyber security into data analysis. </p>
+                                              <h5>Edeh Chinaza F.</h2>
+                                              <h5 class="profession">Data scientist</p>
+                                          </div>
 
-                        <div class="swiper-slide">Slide 2
-                                
-                                  <p>The entirety of events in the YPF has challenged me to keep up steeping on my game and think more globally. </p>
-                                  <h5>Zigede Lewis Jr.</h2>
-                                  <h5 class="profession">GIS | Web Developer | Geoscientist</p>
-                              
+                              </div>       <!--  swiper wrapper container ends here -->
 
+                              <div class="swiper-pagination"></div>
 
-                        </div>
-                        <div class="swiper-slide">Slide 3
-                                
-                                  <p>The cyber security skills I acquired showed me a ray of light on how to develope a career in cyber security. </p>
-                                  <h5>Queen Victoria</h2>
-                                  <h5 class="profession">Archeologist</p>
-                              </div>
+                              <!-- If we need navigation buttons -->
+                              <div class="swiper-button-prev"></div>
+                              <div class="swiper-button-next"></div>
+                            
+                              <!-- If we need scrollbar -->
+                              <div class="swiper-scrollbar"></div>
 
-                        </div>
-
-                        <div class="swiper-slide">Slide 4
-
-                                
-                                  <p>The cyber security training I took helped me to integrate cyber security into data analysis. </p>
-                                  <h5>Edeh Chinaza F.</h2>
-                                  <h5 class="profession">Data scientist</p>
-                              
-                          
-                        </div>
-
-                        ...
-                      </div>
-                      <!-- If we need pagination -->
-                      <div class="swiper-pagination"></div>
-                    
-                      <!-- If we need navigation buttons -->
-                      <div class="swiper-button-prev"></div>
-                      <div class="swiper-button-next"></div>
-                    
-                      <!-- If we need scrollbar -->
-                      <div class="swiper-scrollbar"></div>
-                    </div>
-
-                    <!-- swiper js ends -->
-
-                    <!-- <div class="testimonial-boxes-container">   <!- The testimonial container starts here here -->
-                            <!-- <div class="each-testimonial-box">
-                                <p>The training is one of a kind and really an eye opener for everyone of us to harness our potentials. </p>
-                                <h5>Rhema Nwadike</h2>
-                                <h5 class="profession">Digital Smart Surveyor</p>
-                            </div>
-
-                            <div class="each-testimonial-box">
-                                <p>The entirety of events in the YPF has challenged me to keep up steeping on my game and think more globally. </p>
-                                <h5>Zigede Lewis Jr.</h2>
-                                <h5 class="profession">GIS | Web Developer | Geoscientist</p>
-                            </div>
-
-                            <div class="each-testimonial-box">
-                                <p>The cyber security skills I acquired showed me a ray of light on how to develope a career in cyber security. </p>
-                                <h5>Queen Victoria</h2>
-                                <h5 class="profession">Archeologist</p>
-                            </div>
-
-                            <div class="each-testimonial-box">
-                                <p>The cyber security training I took helped me to integrate cyber security into data analysis. </p>
-                                <h5>Edeh Chinaza F.</h2>
-                                <h5 class="profession">Data scientist</p>
-                            </div>
-                    </div>   The testimonial container ends here here --> 
+                    </div>   <!-- The testimonial container / swiper ends here here -->
 
                     <div class="slide-button"> <!-- These are two buttons that can scroll left and right-->
-                            <button id="testimonial-scroll-btn-left"> &lt </button>
-                            <button id="testimonial-scroll-btn-right"> &gt </button>
+                            <button class="testimonial-scroll-btn-left"> &lt </button>
+                            <button class="testimonial-scroll-btn-right"> &gt </button>
                     </div> <!-- The  two button div ends here here -->
 
                 </div> <!-- The 7th section of Our Testimonials ends here -->
@@ -394,13 +349,10 @@
     </section>
        
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="index.js" > </script>
     <script src="liveChart.js" type="text/javascript"></script>
-    <script src="swiper.js" > </script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">
-
-    </script>
     
 </body>
 </html>
