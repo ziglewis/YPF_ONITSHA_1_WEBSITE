@@ -387,11 +387,21 @@ let swiper = new Swiper('.swiper', {
   slidesPerView: "2",
   
   autoplay: {
-		delay: 3000,
-		disableOnInteraction: false
+	delay: 3000,
+	disableOnInteraction: false,
+  pauseOnMouseEnter: true,
     
 	},
     spaceBetween: 20,
+    speed: 1000,
+    timingFunction: "linear",
+    
+
+    // transitionTiming: {
+    //   duration: 1000,
+    //   timingFunction: "linear",
+    //   delay: 200,
+    // },
   // If we need pagination
   // pagination: {
   //   el: '.swiper-pagination',
@@ -403,7 +413,11 @@ let swiper = new Swiper('.swiper', {
     prevEl: ".testimonial-scroll-btn-left"
   },
   
+  
 });
+
+
+
 
 
    
