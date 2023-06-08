@@ -2,6 +2,8 @@
 // JS FOR HOME PAGE STARTS HERE
 
 
+
+
 let myOurDriveSection = document.querySelector(".our-drive-3box-container")
 
 let myOurDriveSectionContents = [ 
@@ -384,7 +386,7 @@ let swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  slidesPerView: "2",
+  slidesPerView: "1",
   autoplay: {
 	delay: 3000,
   disableOnInteraction: false,
@@ -401,6 +403,13 @@ let swiper = new Swiper('.swiper', {
     spaceBetween: 20,
     speed: 800,
     timingFunction: "linear",
+
+    breakpoints: {
+      
+      800: {
+        slidesPerView: 2,
+      },
+    },
     
 
     // transitionTiming: {
@@ -421,6 +430,13 @@ let swiper = new Swiper('.swiper', {
 
 });
 
+let mySwiperWrapper = document.querySelector(".swiper-wrapper")
+
+mySwiperWrapper.addEventListener("mouseenter", function(){
+
+  swiper.autoplay.pause()
+
+})
 
 
 
