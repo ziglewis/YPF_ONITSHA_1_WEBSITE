@@ -651,7 +651,7 @@ font-weight: 400;
 /* SECTION 7 OF OUR TESTIMONIALS SLIDING IN STARTS HERE  */
 
 
-.testimonial-boxes-container{
+/* .testimonial-boxes-container{
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -665,9 +665,14 @@ font-weight: 400;
 
 .each-testimonial-box {
     border: 3px solid blue;
-    width: 800px;
-}
+    width: 100%;
+} */
 
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
 
 
 /* SECTION 7 OF OUR TESTIMONIALS SLIDING IN ENDS HERE  */
