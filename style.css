@@ -659,18 +659,7 @@ font-weight: 400;
     color: #6bc329;
     /* border: 3px solid yellow; */
 }
-.testimonial-boxes-container{
-    /* display: flex;
-    flex-direction: row;
-    gap: 20px;
-    overflow-x: scroll; */
-    /* border: 3px solid red; */
-    /* box-sizing: border-box; */
-    /* transition: 2s; */
-    
-    /* width: 100vw; */
 
-}
 
 .testimonials-section h2 {
     font-size: 30px;

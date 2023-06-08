@@ -385,15 +385,21 @@ let swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: "2",
-  
   autoplay: {
 	delay: 3000,
-	disableOnInteraction: false,
+  disableOnInteraction: false,
   pauseOnMouseEnter: true,
-    
+  // reverseDirection: true
 	},
+
+  // effect: 'cube',
+  // cubeEffect: {
+  //   slideShadows: false,
+  // },
+
+
     spaceBetween: 20,
-    speed: 1000,
+    speed: 800,
     timingFunction: "linear",
     
 
@@ -412,10 +418,8 @@ let swiper = new Swiper('.swiper', {
     // prevEl: '.swiper-button-prev',
     prevEl: ".testimonial-scroll-btn-left"
   },
-  
-  
-});
 
+});
 
 
 
