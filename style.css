@@ -662,6 +662,7 @@ font-weight: 400;
     gap: 20px;
     overflow-x: scroll; */
     border: 3px solid red;
+    box-sizing: border-box;
     /* width: 100vw; */
 
 
@@ -670,13 +671,14 @@ font-weight: 400;
 .each-testimonial-box {
     border: 3px solid blue;
     /* width: 500px; */
+    box-sizing: border-box;
 }
 
 
-.swiper {
-  /* width: 600px;
-  height: 300px; */
-}
+/* .swiper {
+ 
+  height: 300px;
+} */
 
 
 /* SECTION 7 OF OUR TESTIMONIALS SLIDING IN ENDS HERE  */
