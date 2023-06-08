@@ -409,6 +409,8 @@ let swiper = new Swiper('.swiper', {
       1000: {
         slidesPerView: 2,
       },
+
+      
     },
     
 
