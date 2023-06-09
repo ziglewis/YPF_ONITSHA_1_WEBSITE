@@ -269,8 +269,10 @@
                     </div>   <!-- The testimonial container / swiper ends here here -->
 
                     <div class="slide-button"> <!-- These are two buttons that can scroll left and right-->
-                            <button class="swipe-left  testimonial-scroll-btn-left"> &lt </button>
-                            <button class="swipe-right  testimonial-scroll-btn-right"> &gt </button>
+                            <button class="testimonial-scroll-btn-left"> &lt </button>
+                            <button class="testimonial-scroll-btn-right"> &gt </button>
+                            <button class="swipe-left"> &lt</button>
+                            <button class="swipe-right"> &gt</button>  <!-- These two buttons swipe left and right are strictly for camouflage since swiperJS pauseOnMouseEnter: refused to work, I used disable method as an alternative which takes away the navigation buttons (another bug), then immediately these guys shows up to cover the bug not solve it, I simply used visibility to achieve that in css...if you inspect the page you may understand better -->
                     </div> <!-- The  two button div ends here here -->
 
                 </div> <!-- The 7th section of Our Testimonials ends here -->

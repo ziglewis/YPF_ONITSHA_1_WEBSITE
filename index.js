@@ -384,43 +384,37 @@ window.addEventListener('scroll', checkVisibility );
 
 
 
-
-
-
-
 let swiper = new Swiper('.swiper', {
  
   direction: 'horizontal',
   loop: true,
   slidesPerView: "1",
   autoplay: {
-	delay: 3000,
+	delay: 2000,
   disableOnInteraction: false,
   pauseOnMouseEnter: true,
  
 	},
-
-
     spaceBetween: 20,
-    speed: 800,
-    timingFunction: "linear",
+    speed: 1500,
+    transition: {
+      duration: 2000,
+      easing: 'linear',
+      delay: 5000
+    },
     
 
     breakpoints: {
       
       1000: {
         slidesPerView: 2,
-      },
-
-      
+      },  
     },
     
   navigation: {
     nextEl: '.testimonial-scroll-btn-right',
     prevEl: ".testimonial-scroll-btn-left"
   },
-
-
 
 });
  
@@ -435,24 +429,21 @@ let mySwiperRightBtn = document.querySelector(".swipe-right")
 
 mySwiperWrapper.addEventListener("mouseenter", function(){
 
-  mySwiperLeftBtn.classList.remove("testimonial-scroll-btn-left")
-  mySwiperRightBtn.classList.remove("testimonial-scroll-btn-right")
+
+
+  mySwiperLeftBtn.style.visibility = "visible"
+  mySwiperRightBtn.style.visibility = "visible"
   swiper.disable()
 
 })
 
 mySwiperWrapper.addEventListener("mouseleave", function(){
 
+  mySwiperLeftBtn.style.visibility = "hidden"
+  mySwiperRightBtn.style.visibility = "hidden"
   swiper.enable()
 
 })
-
-.classList.remove("hero-color-fill")
-                    myHeroFooterLine.classList.add("color-fill-reverse")
-
-
-   
-
 
 // SWIPER JS CODE ENDS
 

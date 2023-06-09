@@ -668,7 +668,9 @@ font-weight: 400;
     letter-spacing: 00.5px;
     font-weight: 600;
     text-transform: capitalize;
-    margin-bottom: 45px;
+    /* margin-bottom: 45px; */
+    padding-bottom: 2px;
+
 }
 
 .each-testimonial-box {
@@ -724,6 +726,12 @@ font-weight: 400;
     color: #cccccc;
     font-weight: 300;
     font-size: 20px;
+}
+
+.swipe-left, .swipe-right {
+
+    visibility: hidden;
+
 }
 
 .swiper {
