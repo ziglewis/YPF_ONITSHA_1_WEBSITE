@@ -956,8 +956,6 @@ footer p{
         top: 140px;
     }
 
-    /*  */
-
 .hero-content{
     line-height: 2rem;
     font-size:14px;
@@ -983,16 +981,69 @@ footer p{
 
 }
 
+/* breakpoint three */
+@media (max-width: 360px) { 
+
+    .scrol-images-background{
+
+        padding: 0px 30px 10px 5px;
+        width: 100%;
+        height: 300px;
+
+    }
+
+    .scrol-images-writeup-left {
+        padding-top: 40px;
+ 
+    }
+
+    .Hero-footer a {
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        line-height: 25px;
+            }
+    
+  .minimize-icon{
+                
+    right: 2%;  }
+
+    .my-nav-bar h6 { 
+        letter-spacing: 0.9px;
+        font-size: 8px;
+    }
+    .hero-head{
+        font-size: 18px;
+}
+
+.hero-content{
+    line-height: normal;
+    font-size:13px;
+    font-weight:300;
+    width: 500px;
+    max-width: 90%;
+    
+}
+
+.Hero-footer a {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    line-height: 30px;
+        }
+
+}
+
+
+
 
 
 /* This hides the horizontal pop up once above 801px screen, since it gets enabled from 800px as stated in breakpoint two above media query */
 @media (min-width: 801px) {
     .pop-up, hr {
-        
              margin-top: -7000px;
              z-index: -6;
              visibility: hidden;
        
-    }
-
+             }
 } 
