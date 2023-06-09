@@ -746,9 +746,63 @@ font-weight: 400;
 
 .contact-us-items {
     width: 100%;
-    border: 4px solid rebeccapurple;
+    /* border: 4px solid rebeccapurple; */
     
 
+}
+
+.contact-us-items p {
+    color: #848484;
+    font-size: 12.6px;
+    line-height: 23.94px;
+    letter-spacing: 1px;
+    vertical-align: baseline;
+    text-align: left;
+}
+
+.contact-us-items h2 {
+    color: #ffffff;
+    font-size: 18.2px;
+    line-height: 14.56px;
+    vertical-align: baseline;
+    text-align: left;
+    margin-bottom: 30px;
+
+}
+
+.blog a {
+    text-decoration: none;
+}
+
+.blog a p{
+    color: #ffffff;
+}
+
+#email {
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#telephone {
+    width: 75%;
+    box-sizing: border-box;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#subscribe {
+    width: 130px;
+    box-sizing: border-box;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    background-color: #6bc329;
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    font-weight: 700;
 }
 
 
