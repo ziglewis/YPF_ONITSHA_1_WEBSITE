@@ -827,12 +827,75 @@ font-weight: 400;
 
 footer {
     display: flex;
-    padding: 12%;
+    padding: 0px 12%;
     justify-content: space-between;
+    /* border: 3px solid goldenrod; */
+    align-items: center;
+    height: fit-content;
+    background-color: black;
+
 }
+
+footer p{
+    font-size: 15px;
+    line-height: 23.94px;
+    letter-spacing: 1px;
+    vertical-align:baseline;
+    max-width: 450px;
+    text-align: left;
+}
+
 .footer-name {
     color: #6bc329;
+    font-weight: bolder;
 }
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons  div{ 
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.social-icons div:nth-child(1):hover, .social-icons div:nth-child(2):hover, .social-icons div:nth-child(3):hover, .social-icons div:nth-child(4):hover { 
+    
+    transition: all ease 0.5s;
+    background-color: rgba(0, 0, 0, 0.815);
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.social-icons div:nth-child(1) {
+    transition: all ease 1s;
+    background-color: #527dbd;
+}
+
+.social-icons div:nth-child(2) {
+    transition: all ease 1s;
+    background-color: #1da1f2;
+}
+
+.social-icons div:nth-child(3) {
+    transition: all ease 1s;
+    background-color: #e1466c;
+}
+
+.social-icons div:nth-child(4) {
+    transition: all ease 1s;
+    background-color: #c4302b;
+}
+
+
 
 
 /* ALL THE MEDIA QUERIES FOR RESPONSIVENESS STARTS HERE  */
