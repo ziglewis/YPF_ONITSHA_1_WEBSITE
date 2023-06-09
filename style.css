@@ -175,7 +175,7 @@ body{
   .minimize-icon {
     border: 1px solid white;
     position: fixed;
-    top: 18px;
+    top: 26px;
     right: 30px;
     width: 30px; 
     height: 30px;
@@ -188,23 +188,14 @@ body{
 
   }
 
-  /* .navbar-events:hover #Event-drop-down{
-    display: block;
-  } */
-
-  
-  
+ 
   main { 
-    /* padding: 160px; */
     color: #ffffff;
     box-sizing: border-box;
-    /* border: 4px solid green; */
-   
+    }
 
-}
 
 hr {
-    
     width: 94%;
     z-index: 8;
     top: 60px;
@@ -213,9 +204,8 @@ hr {
     left: 3%;
     border: 0.2px solid black;
     opacity: 0.3;
-    visibility: hidden;
-    
-}
+    visibility: hidden;   
+    }
 
 .pop-up {
     text-align: center;
@@ -232,22 +222,15 @@ hr {
 
 }
 #pop-up-Event-drop-down {
-    
-    /* display: flex; */
-
     padding-top: 5px;
     flex-direction: column;
     gap: 5px;
     line-height: 1.5;
     display: none;
-    
-}
+    }
 /* NAV BAR AND ITS CHILDREN ENDED HERE */
 
 /* SECTION TWO STARTED I.E HERO PAGE */
-
-  
-
 
 .scrol-images-background{
 
@@ -268,9 +251,9 @@ hr {
 
 .scrol-images-writeup-left {
     padding-top: 15%;
-    text-shadow: 0px 0px 1px black;
-    
+    text-shadow: 0px 0px 1px black;  
 }
+
 .hero-head{
     color: #6BC329;
     font-size: 42px;
@@ -924,38 +907,48 @@ footer p{
 
 }
 
-
+/* second breakpoint query */
 @media (max-width: 800px) {
 
     .minimize-icon{
         display: block;
-    }
+                 }
 
     .Other-bars {
         display: none;
-    }
+                 }
 
 .my-nav-bar {
-    
-    padding:12px 2%;
-    }
+        padding:12px 2%;
+                }
 
     #Event-drop-down {
         content-visibility: hidden;
         padding: 0px;
         opacity: 0.95;
         right: -1000px;
-       
-
-        /* display: none;    */
-    }
+                 }
 
     .scrol-images-background{
 
-        padding: 0px 2% 10px 2%;
+        padding: 0px 2% 10px 30px;
         width: 100%;
-        height: 60vh;
+        height: 350px;
 
+    }
+
+    .scrol-images-writeup-left {
+        padding-top: 80px;
+ 
+    }
+    
+    .hero-head{
+        font-size: 26px;
+        font-weight:600;
+        letter-spacing: 1px;
+        text-align: left;
+        line-height: 21px;
+        vertical-align: baseline;
     }
 
     .scrol-images-writeup-right{
@@ -968,7 +961,9 @@ footer p{
 }
 
 
-@media (min-width: 761px) {
+
+/* This hides the horizontal pop up once above 801px screen, since it gets enabled from 800px as stated in breakpoint two above media query */
+@media (min-width: 801px) {
     .pop-up, hr {
         
         margin-top: -7000px;
