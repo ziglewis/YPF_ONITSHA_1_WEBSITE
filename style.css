@@ -824,6 +824,7 @@ font-weight: 400;
 
 /* SECTION 8 OF THE FOOTER ENDS HERE  */
 
+/* THE FINAL SECTION OF THE FOOTER STARTS HERE */
 
 footer {
     display: flex;
@@ -878,22 +879,30 @@ footer p{
 .social-icons div:nth-child(1) {
     transition: all ease 1s;
     background-color: #527dbd;
+    border: 1px solid   #527dbd ;
 }
 
 .social-icons div:nth-child(2) {
     transition: all ease 1s;
     background-color: #1da1f2;
+    border: 1px solid   #1da1f2 ;
 }
 
 .social-icons div:nth-child(3) {
     transition: all ease 1s;
     background-color: #e1466c;
+    border: 1px solid  #e1466c ;
 }
 
 .social-icons div:nth-child(4) {
     transition: all ease 1s;
     background-color: #c4302b;
+    border: 1px solid #c4302b ;
 }
+
+
+
+/* THE FINAL SECTION OF THE FOOTER ENDS HERE */
 
 
 
