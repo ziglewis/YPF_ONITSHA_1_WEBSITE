@@ -187,11 +187,11 @@ let poUpOnAndOff = () => {
                     
                         ]
 
-        let myHeroWriteup = document.querySelector(".scrol-images-writeup-left")
-        let myHeroPageImages = document.querySelector(".scrol-images-background")
+        let myHeroWriteup = document.querySelector(".scroll-images-writeup-left")
+        let myHeroPageImages = document.querySelector(".scroll-images-background")
 
 
-                                          // function garuba() {this.fadeIn(2000)}
+                              
     
             let generateHeroContent = dataPoint => {
 
@@ -221,9 +221,9 @@ let poUpOnAndOff = () => {
             myHeroFooterAnimation() 
 
             // this code is controlling the 3 rectangular boxes or lines on the right hand side of the hero page
-            let myFooterBackgroundImageLine1 = document.getElementById("scrol-images-writeup-right-line1")
-            let myFooterBackgroundImageLine2 = document.getElementById("scrol-images-writeup-right-line2")
-            let myFooterBackgroundImageLine3 = document.getElementById("scrol-images-writeup-right-line3")
+            let myFooterBackgroundImageLine1 = document.getElementById("scroll-images-writeup-right-line1")
+            let myFooterBackgroundImageLine2 = document.getElementById("scroll-images-writeup-right-line2")
+            let myFooterBackgroundImageLine3 = document.getElementById("scroll-images-writeup-right-line3")
 
                     function callbackBackgroundImage() { 
                 
