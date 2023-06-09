@@ -734,13 +734,31 @@ font-weight: 400;
 
 }
 
-.swiper {
- 
-   /* transition-delay: 10s; */
+/* SECTION 7 OF OUR TESTIMONIALS SLIDING IN ENDS HERE  */
+
+/* SECTION 8 OF THE FOOTER STARTS HERE  */
+
+.contact-us {
+    display: flex;
+    padding: 60px 12%;
+    gap: 2%;
+}
+
+.contact-us-items {
+    width: 100%;
+    border: 4px solid rebeccapurple;
+    
+
 }
 
 
-/* SECTION 7 OF OUR TESTIMONIALS SLIDING IN ENDS HERE  */
+/* SECTION 8 OF THE FOOTER ENDS HERE  */
+
+
+
+
+
+/* ALL THE MEDIA QUERIES FOR RESPONSIVENESS STARTS HERE  */
 
 
 @media (max-width: 1160px) {
