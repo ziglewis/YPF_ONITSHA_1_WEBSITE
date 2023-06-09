@@ -418,7 +418,7 @@ hr {
     padding: 35px 30px 60px;
     line-height: 30px;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .myOurDriveSectionBoxes:hover, .myOurDriveSectionBoxes:hover h2, .myOurDriveSectionBoxes:hover h1{
@@ -983,6 +983,16 @@ footer p{
         .section-3-WeAreYPF {
             grid-template-columns: repeat(auto-fit, minmax( 100%, 1fr));
             padding:  190px 2% 60px;    
+        }
+
+        .our-drive-3box-container{
+   
+            grid-template-columns: repeat(auto-fit, minmax( 100%, 1fr));
+            gap: 30px;
+            box-sizing: border-box;
+            padding: 20px 2% 40px;
+    
+        
         }
 
 }
