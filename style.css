@@ -769,6 +769,9 @@ font-weight: 400;
     margin-bottom: 30px;
 
 }
+.About-us{
+    padding-right: 10px;
+}
 
 .blog a {
     text-decoration: none;
@@ -805,11 +808,31 @@ font-weight: 400;
     font-weight: 700;
 }
 
+.stay-in-touch-items-container {
+ /* border: 3px solid gold; */
+
+ margin-top: -13px;
+}
+
+.stay-in-touch-each-items {
+    
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* border: 3px solid gold; */
+}
 
 /* SECTION 8 OF THE FOOTER ENDS HERE  */
 
 
-
+footer {
+    display: flex;
+    padding: 12%;
+    justify-content: space-between;
+}
+.footer-name {
+    color: #6bc329;
+}
 
 
 /* ALL THE MEDIA QUERIES FOR RESPONSIVENESS STARTS HERE  */
