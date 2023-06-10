@@ -333,7 +333,7 @@ hr {
     color: rgb(98, 98, 98);
     gap: 2%;
     padding:  190px 12% 60px;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: -230px;
     z-index: 2;
     line-height: 30px;
@@ -341,11 +341,10 @@ hr {
 }
 
 .section-3-WeAreYPF-left, .section-3-WeAreYPF-right {
-
-      text-align: justify;
-      
+      text-align: left;
       
 }
+
 
 .section-3-WeAreYPF-left h1 {
     color: black;
@@ -456,7 +455,7 @@ hr {
 .our-pride-section-groups {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax( 155px, 1fr));
-    gap: 10%;
+    gap: 0px;
     margin-top: -30px;
 
 }
@@ -481,7 +480,7 @@ hr {
 }
 .our-pride-section-groups  h3{ 
 
-    font-size: 20px;
+    font-size: 18px;
     line-height: 16px;
     font-weight: 700;
 
@@ -514,42 +513,60 @@ hr {
     grid-auto-rows: 238px;
     padding: 50px 12%;
     row-gap: 30px;
-    column-gap: 20px;
+    column-gap: 22px;
 
 }
     
 .what-we-do-group-items {
     display: flex;
-    /* width: 500px; */
-    /* border: 3px solid black;  */
-    /* height: 200px; */
-    
+    background-color: black;
+    box-sizing: border-box;
 }
 
 .what-we-do-group-items-image {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    /* background-image: url("images/career.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover; */
     z-index: 1;
-    
+    background-image: url("images/backgroundImage4.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+/* .what-we-do-group-items-image:nth-child(1){
+    background-image: url("images/ba");
+   
+} */
 
 .what-we-do-group-items-image img {
     width: 400px;
     height: 100%;
     z-index: -1;
+    display: none;
 }
 
 .what-we-do-group-items-writeup{
     transition: 0.3s;
 background-color: #f0f0f0;
-padding: 5.5%;
+padding: 15px 5%;
 width: 100%;
 z-index: 2;
+margin-left: -5%;
+margin-bottom: -1px;
+margin-right: -1px;
+margin-top: -1px;
+min-width: 200px;
+box-sizing: border-box;
+clip-path: polygon(100% 0, 100% 100%, 6% 100%, 6% 55%, 0 50%, 6% 45%, 6% 0);
+
 }
+
+.what-we-do-group-items-writeup:nth-child(1){
+    clip-path: polygon(94% 55%, 94% 100%, 0 100%, 0 0, 94% 0, 94% 45%, 100% 50%);
+    margin-left: -1px;
+    margin-right: -5%;
+        }
 
 .what-we-do-group-items-writeup h2{
     color: #6bc329;
@@ -562,7 +579,7 @@ z-index: 2;
 
 .what-we-do-group-items-writeup p{
  color: rgb(153,153,153);
- font-size: 14px;
+ font-size: 16px;
 line-height: 25.2px;
 font-weight: 400;
 }
@@ -570,7 +587,6 @@ font-weight: 400;
 .what-we-do-group-items:hover .what-we-do-group-items-writeup{
 
     transition: 0.3s;
-    padding: 5.5% 7.5%;
     width: 130%;
     background-color:  rgb(37, 34, 34);
     /* background-image: linear-gradient(rgba(43, 32, 206, 0.6),rgba(189, 25, 25, 0.6)); */
@@ -580,25 +596,7 @@ font-weight: 400;
 
     /* border: 4px solid yellow; */
     background-color: black;
-   
-
- }
- .what-we-do-group-items:hover .what-we-do-group-items-image img {
-    opacity: 0.5;
- }
-
- .what-we-do-group-items-writeup-arrow-left {
-    transition: 0.3s;
-    float: left;
-    /* margin-left: -18%;
-    margin-top: -110px; */
-    /* left: 20px; */
-    color:#f0f0f0;
-    text-align: start;
-    font-size: 4rem;
-    padding:initial;
-    Margin-left: -20%;
-    margin-top: 50px;
+   opacity: 0.5;
 
  }
 
@@ -608,20 +606,6 @@ font-weight: 400;
 
  }
 
- .what-we-do-group-items-writeup-arrow-right {
-    transition: 0.3s;
-    float: right;
-    /* margin-left: -18%;
-    margin-top: -110px; */
-    
-    color:#f0f0f0;
-    text-align: end;
-    font-size: 4rem;
-    Margin-right: -25%;
-    margin-top: 50px;
-    /* z-index: 4; */
-
- }
 
  /* SECTION 6 OF WHAT WE DO ENDS HERE */
 
@@ -992,16 +976,14 @@ footer p{
             padding-bottom: 100px;
         }
 
+      
+            
         .what-we-do-group {
-            padding: 50px 3%;
+            padding: 5px 3%;
+            grid-template-columns: repeat(auto-fit, minmax( 100%, 1fr));
         }
 
-        .what-we-do-group-items-image img {
-            width: 150%;
-            height: 100%;
-            z-index: -1;
-        }
-
+        
         .testimonials-section{
 
             padding: 15px 3%;}
@@ -1032,7 +1014,7 @@ footer p{
             }
     
   .minimize-icon{
-                
+
     right: 2%;  }
 
     .my-nav-bar h6 { 
