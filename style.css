@@ -337,7 +337,7 @@ hr {
     margin-top: -230px;
     z-index: 2;
     line-height: 30px;
-    font-family: 'Times New Roman', Times, serif;
+    
 }
 
 .section-3-WeAreYPF-left, .section-3-WeAreYPF-right {
@@ -387,7 +387,7 @@ hr {
     grid-template-columns: repeat(auto-fit, minmax( 300px, 1fr));
     gap: 30px;
     box-sizing: border-box;
-    padding: 20px 12.5% 40px;
+    padding: 20px 12% 40px;
     text-align: center;
     box-sizing: border-box;
 
@@ -528,16 +528,27 @@ hr {
     height: 100%;
     overflow: hidden;
     z-index: 1;
-    background-image: url("images/backgroundImage4.jpeg");
+    /* background-image: url("images/backgroundImage4.jpeg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* .what-we-do-group-items-image:nth-child(1){
-    background-image: url("images/ba");
-   
-} */
+ .what-we-do-fig-1{
+    background-image: url("images/skill4.jpg");
+} 
+
+.what-we-do-fig-2{
+    background-image: url("images/megaSummit.jpg");
+} 
+
+.what-we-do-fig-3{
+    background-image: url("images/career.jpeg");
+} 
+
+.what-we-do-fig-4{
+    background-image: url("images/skill-Aquizition.jpg");
+} 
 
 .what-we-do-group-items-image img {
     width: 400px;
@@ -643,7 +654,7 @@ font-weight: 400;
 }
 
 .each-testimonial-box  p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 33px;
     font-weight: 400px;    
     text-align: justify;
@@ -794,6 +805,7 @@ footer {
     align-items: center;
     height: fit-content;
     background-color: black;
+    gap: 15px;
 
 }
 
@@ -882,6 +894,11 @@ footer p{
        
     }
 
+    .contact-us {
+        
+        flex-direction: column;
+    }
+
 }
 
 /* second breakpoint query */
@@ -932,7 +949,11 @@ footer p{
     .scroll-images-writeup-right{
          right: 5%;
         top: 140px;
-    }
+    }  .what-we-do-group-items-writeup h2{
+            
+        font-size: 25px;
+        }
+
 
 .hero-content{
     line-height: 2rem;
@@ -988,6 +1009,20 @@ footer p{
 
             padding: 15px 3%;}
 
+            .contact-us {
+                display: flex;
+                padding: 60px 3%;
+                gap: 2%;
+                flex-direction: column;
+            }
+            
+
+            footer {
+                
+                flex-direction: column;
+                padding: 0px 3% 30px;
+               
+            }
 }
 
 /* breakpoint three */
@@ -1041,6 +1076,90 @@ footer p{
     line-height: 30px;
         }
 
+        .myOurDriveSectionBoxes {
+    
+            /* border: 3px solid red; */
+            min-width: 100%;
+            padding: 20px 2%;
+            
+        }
+
+        .what-we-do-group-items-writeup{
+            
+        padding: 10px 3%;
+        width: 100%;
+        min-width: 100%;
+        }
+
+        .what-we-do-group-items-writeup h2{
+            
+            font-size: 25px;
+            }
+
+}
+
+
+/* 4th breakpoint */
+@media (max-width: 200px) { 
+
+    .my-nav-bar h6 {
+        display: none;
+    }
+
+    .scroll-images-background{
+
+        padding: 0px 30px 10px 5px;
+        height: 350px;
+
+    }
+
+    .what-we-do-group-items-writeup h2{
+            
+        font-size: 20px;
+        }
+
+
+
+        .our-pride-section h2{ 
+            font-size: 20px;
+           
+        }
+        
+         
+        .our-pride-section-groups{
+            text-align: center;
+            margin-left: 0px ;
+        }
+
+        
+        
+        .our-pride-section-groups  h1{ 
+            
+            font-size: 24px;
+        }
+        .our-pride-section-groups  h2{ 
+        
+            font-size: 25px;
+            line-height: 35px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-top: -10px;
+        
+        }
+        .our-pride-section-groups  h3{ 
+        
+            font-size: 14px;
+            line-height: 16px;   
+        }
+
+        .our-pride-section-groups {
+            
+            grid-template-columns: repeat(auto-fit, minmax( 100%, 1fr));
+            
+        
+        }
+
+    
 }
 
 
