@@ -1024,8 +1024,11 @@ footer p{
 
             footer {
                 
-                flex-direction: column;
-                padding: 0px 3% 30px;
+                flex-direction: column-reverse;
+                padding: 10px 3% 30px;
+                column-gap: -15px;
+                align-items: flex-start;
+                gap: 5%;
                
             }
 
@@ -1188,6 +1191,10 @@ footer p{
         
         }
 
+        .social-icons div {
+            width: auto;
+            height: auto;
+        }
     
 }
 
