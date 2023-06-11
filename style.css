@@ -236,7 +236,7 @@ hr {
 
     padding: 80px 13%;
     width: 100%;
-    height: 90vh;
+    height: 685px;
     position: relative;
     top:  -85px;
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/megaSummit.jpg"); */
@@ -266,10 +266,10 @@ hr {
 }
 
 .hero-content{
-    line-height: 2rem;
+    line-height: 30.24px;
     font-size:16.6px;
-    letter-spacing: 2px;
-    font-weight:300;
+    letter-spacing: 1px;
+    font-weight:500;
     width: 500px;
     max-width: 90%;
     
@@ -928,38 +928,39 @@ footer p{
 
         padding: 0px 80px 10px 30px;
         width: 100%;
-        height: 350px;
+        height: 360px;
 
     }
 
     .scroll-images-writeup-left {
-        padding-top: 80px;
+        padding-top: 70px;
  
     }
     
     .hero-head{
         font-size: 26px;
-        font-weight:600;
+        font-weight:800;
         letter-spacing: 1px;
         text-align: left;
-        line-height: 21px;
+        line-height: 25px;
         vertical-align: baseline;
     }
 
     .scroll-images-writeup-right{
          right: 5%;
         top: 140px;
-    }  .what-we-do-group-items-writeup h2{
+    }  
+    
+    .what-we-do-group-items-writeup h2{
             
         font-size: 25px;
         }
 
 
 .hero-content{
-    line-height: 2rem;
-    font-size:14px;
+    line-height: 26px;
+    font-size:16px;
     letter-spacing: 1px;
-    font-weight:300;
     width: 500px;
     max-width: 90%;
     
@@ -982,7 +983,7 @@ footer p{
             grid-template-columns: repeat(auto-fit, minmax( 100%, 1fr));
             padding:  190px 3% 60px;    
         }
-
+ 
         .our-drive-3box-container{
    
             grid-template-columns: repeat(auto-fit, minmax( 100%, 1fr));
@@ -1015,6 +1016,10 @@ footer p{
                 gap: 2%;
                 flex-direction: column;
             }
+
+            .each-testimonial-box{
+                padding: 20px 8%;
+            }
             
 
             footer {
@@ -1036,10 +1041,17 @@ footer p{
 
     }
 
+    
+
     .scroll-images-writeup-left {
         padding-top: 40px;
  
     }
+
+    .scroll-images-writeup-right{
+        right: 3%;
+       top: 100px;
+   }
 
     .Hero-footer a {
         font-size: 12px;
@@ -1102,6 +1114,10 @@ footer p{
 /* 4th breakpoint */
 @media (max-width: 200px) { 
 
+    body {
+        overflow-x: hidden;
+    }
+
     .my-nav-bar h6 {
         display: none;
     }
@@ -1117,6 +1133,20 @@ footer p{
             
         font-size: 20px;
         }
+
+        .our-drive h2 {
+            font-size: 20px;
+        }
+        .our-drive-3box-container h2 {
+            font-size: 18px;
+        }
+
+        .section-3-WeAreYPF-left h1, .testimonials-section h2 {
+    
+            font-size: 20Px;
+            
+        }
+
 
 
 
