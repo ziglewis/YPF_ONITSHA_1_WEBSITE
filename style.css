@@ -1028,7 +1028,7 @@ footer p{
                 padding: 0px 3% 30px;
                
             }
-}
+
 
 /* breakpoint three */
 @media (max-width: 360px) { 
@@ -1050,15 +1050,10 @@ footer p{
 
     .scroll-images-writeup-right{
         right: 3%;
-       top: 100px;
+       top: 150px;
    }
 
-    .Hero-footer a {
-        font-size: 12px;
-        letter-spacing: 1px;
-        font-weight: 400;
-        line-height: 25px;
-            }
+   
     
   .minimize-icon{
 
@@ -1069,12 +1064,12 @@ footer p{
         font-size: 8px;
     }
     .hero-head{
-        font-size: 18px;
+        font-size: 20px;
 }
 
 .hero-content{
     line-height: normal;
-    font-size:13px;
+    font-size:15px;
     font-weight:300;
     width: 500px;
     max-width: 90%;
@@ -1082,7 +1077,7 @@ footer p{
 }
 
 .Hero-footer a {
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 0.5px;
     font-weight: 400;
     line-height: 30px;
@@ -1103,35 +1098,10 @@ footer p{
         min-width: 100%;
         }
 
-        .what-we-do-group-items-writeup h2{
-            
-            font-size: 25px;
-            }
-
-}
-
-
-/* 4th breakpoint */
-@media (max-width: 200px) { 
-
-    body {
-        overflow-x: hidden;
-    }
-
-    .my-nav-bar h6 {
-        display: none;
-    }
-
-    .scroll-images-background{
-
-        padding: 0px 30px 10px 5px;
-        height: 350px;
-
-    }
 
     .what-we-do-group-items-writeup h2{
             
-        font-size: 20px;
+        font-size: 18px;
         }
 
         .our-drive h2 {
@@ -1141,7 +1111,7 @@ footer p{
             font-size: 18px;
         }
 
-        .section-3-WeAreYPF-left h1, .testimonials-section h2 {
+        .section-3-WeAreYPF-left h1, .testimonials-section h2, .what-we-do-title {
     
             font-size: 20Px;
             
@@ -1154,6 +1124,35 @@ footer p{
             font-size: 20px;
            
         }
+
+        /* .what-we-do-group-items-writeup h2{
+            
+            font-size: 25px;
+            } */
+
+            body {
+                overflow-x: hidden;
+            }
+        
+
+}
+
+
+/* 4th breakpoint */
+@media (max-width: 200px) { 
+
+   
+    .my-nav-bar h6 {
+        display: none;
+    }
+
+    .scroll-images-background{
+
+        padding: 0px 30px 10px 5px;
+        height: 350px;
+
+    }
+
         
          
         .our-pride-section-groups{
@@ -1192,6 +1191,14 @@ footer p{
     
 }
 
+@media (max-width: 160px) { 
+    body {
+        overflow-x: auto;
+    }
+
+
+}
+
 
 
 
@@ -1205,3 +1212,4 @@ footer p{
        
              }
 } 
+}
