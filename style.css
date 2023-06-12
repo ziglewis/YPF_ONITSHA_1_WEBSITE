@@ -1,8 +1,8 @@
 
 * {
-    font-family: sans-serif, Georgia;
+    font-family: sans-serif,  Georgia;
 }
-
+/* Raleway, */
 
 
 
@@ -260,6 +260,7 @@ hr {
     font-size: 42px;
     font-weight:600;
     letter-spacing: 3px;
+    font-family: Raleway;
 }
 
 .Hero-head-span {
@@ -351,6 +352,7 @@ hr {
     color: black;
     font-size: 26Px;
     text-align:left;
+    font-family: Raleway;
 }
 
 .section-3-WeAreYPF-left button {
@@ -396,6 +398,7 @@ hr {
 .our-drive h2 {
     font-size: 28px;
     line-height: 35px;
+    font-family: Raleway;
 }
 
 .myOurDriveSectionBoxes {
@@ -427,6 +430,7 @@ hr {
     color: black;
     font-size: 18px;
     line-height: 14.5px;
+    font-family: inherit;
 
 }
 
@@ -450,6 +454,7 @@ hr {
     letter-spacing: 0.5px;
     font-size: 30px;
     font-weight: 600;
+    font-family: Raleway;
 }
 
 
@@ -477,6 +482,7 @@ hr {
     letter-spacing: 5px;
     font-weight: 600;
     margin-top: -10px;
+    font-family: inherit;
 
 }
 .our-pride-section-groups  h3{ 
@@ -505,6 +511,7 @@ hr {
     font-size: 30px;
     line-height: 24px;
     letter-spacing: 0.5px;
+    font-family: Raleway;
 
 }
 
@@ -642,6 +649,7 @@ font-weight: 400;
     text-transform: capitalize;
     /* margin-bottom: 45px; */
     padding-bottom: 2px;
+    font-family: Raleway;
 
 }
 
@@ -982,7 +990,7 @@ footer p{
 
         .section-3-WeAreYPF {
             grid-template-columns: repeat(auto-fit, minmax( 100%, 1fr));
-            padding:  190px 3% 60px;    
+            padding:  190px 5% 60px;    
         }
  
         .our-drive-3box-container{
@@ -990,11 +998,11 @@ footer p{
             grid-template-columns: repeat(auto-fit, minmax( 100%, 1fr));
             gap: 30px;
             box-sizing: border-box;
-            padding: 20px 3% 40px;
+            padding: 20px 5% 40px;
         }
 
         .our-pride-section{
-            padding: 50px 3%;
+            padding: 50px 5%;
             gap: 0px;
             padding-bottom: 100px;
         }
@@ -1002,18 +1010,18 @@ footer p{
       
             
         .what-we-do-group {
-            padding: 5px 3%;
+            padding: 5px 5%;
             grid-template-columns: repeat(auto-fit, minmax( 100%, 1fr));
         }
 
         
         .testimonials-section{
 
-            padding: 15px 3%;}
+            padding: 15px 5%;}
 
             .contact-us {
                 display: flex;
-                padding: 60px 3%;
+                padding: 60px 5%;
                 gap: 2%;
                 flex-direction: column;
             }
@@ -1026,7 +1034,7 @@ footer p{
             footer {
                 
                 flex-direction: column-reverse;
-                padding: 10px 3% 30px;
+                padding: 10px 5% 30px;
                 column-gap: -15px;
                 align-items: flex-start;
                 gap: 5%;
