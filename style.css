@@ -66,8 +66,6 @@ section {
 body{
     margin: 0px;
     box-sizing: border-box;
-    font-family: Verdana, Tahoma, sans-serif;
-    /* padding: 20px 200px; */
    
 }
 #logo { display: flex;
@@ -75,7 +73,6 @@ body{
     min-width: 147px;
     width: 147px;
     color: #ffffff;
-    /* border: 3px solid yellow; */
     padding: 0%;
     height: 60px;
 
