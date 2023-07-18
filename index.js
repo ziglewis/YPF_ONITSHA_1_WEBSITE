@@ -370,8 +370,7 @@ let poUpOnAndOff = () => {
 
    // Change the background color to red.
    myCounterZone.style.backgroundColor = 'red';
-   let setCounterInterval = setInterval(countUpALLBoxes, 12 )
-   
+   let setCounterInterval = setInterval(countUpALLBoxes, 8 )
    
    window.removeEventListener('scroll', checkVisibility )
    
