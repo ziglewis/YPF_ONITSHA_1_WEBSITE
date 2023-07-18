@@ -421,8 +421,6 @@ let swiper = new Swiper('.swiper', {
 
 
 
-
-
 let mySwiperWrapper = document.querySelector(".swiper-wrapper")
 let mySwiperLeftBtn = document.querySelector(".swipe-left")
 let mySwiperRightBtn = document.querySelector(".swipe-right")
@@ -446,6 +444,21 @@ mySwiperWrapper.addEventListener("mouseleave", function(){
 })
 
 // SWIPER JS CODE ENDS
+
+
+
+ //HANDLING THE CLEARING OF THE NEWSLETTER SUBSCRIPTION FORM AFTER SUBMISSION
+
+    
+ let newsLetterForm = document.querySelector(".news-letter form")
+
+ let newsLetterSubmitBtn = document.querySelector("#subscribe")
+
+  window.addEventListener("pageshow", function() {
+    newsLetterForm.reset()
+    
+  });
+ 
 
 
 
