@@ -436,7 +436,7 @@ hr {
 .our-pride-section{
     text-align: center;
     padding: 50px 12%;
-    background:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/backgroundImage2.jpg");
+    background:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/ypfSharpcrossSectionBirthday.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; 
@@ -544,7 +544,7 @@ hr {
 } 
 
 .what-we-do-fig-2{
-    background-image: url("images/megaSummit.jpg");
+    background-image: url("images/ypfNetwork.jpg");
 } 
 
 .what-we-do-fig-3{
