@@ -470,7 +470,9 @@ mySwiperWrapper.addEventListener("mouseleave", function(){
        
        let categoryName = blogCategory.textContent.split(" ")[1].toLowerCase()+"Blog"
        blogCategory.addEventListener("click", function(){
-           window.location.href = "https://ziglewis.github.io/YPF_Anambra_Blog_Page/?categoryName=true"
+           window.location.href =  `
+           https://ziglewis.github.io/YPF_Anambra_Blog_Page/?${categoryName}=true 
+           `
            
        })
        
