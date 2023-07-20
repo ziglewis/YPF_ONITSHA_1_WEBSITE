@@ -339,12 +339,12 @@ let poUpOnAndOff = () => {
   let myMembersCounter = document.getElementById("count-members")
   let myTraineesCounter = document.getElementById("count-trainees")
   let myAwardeeCounter = document.getElementById("count-awardees")
-   
+   let setCounterInterval
 
                       let maximumCount = 0
                 let  countUpALLBoxes = () => {
 
-                    if (maximumCount > 800) { clearInterval(setCounterInterval)}
+                    if (maximumCount >= 800) { clearInterval(setCounterInterval)}
                     if (maximumCount <= 350) {  myCalenderCounter.textContent = maximumCount  }
                     if (maximumCount <= 528) { myMembersCounter.textContent = maximumCount }
                     if (maximumCount <=  205  ) { myAwardeeCounter.textContent = maximumCount  }
@@ -371,7 +371,7 @@ let poUpOnAndOff = () => {
 
    // Change the background color to red.
    myCounterZone.style.backgroundColor = 'red';
-   let setCounterInterval = setInterval(countUpALLBoxes, 8 )
+   setCounterInterval = setInterval(countUpALLBoxes, 8 )
    
    window.removeEventListener('scroll', checkVisibility )
    
