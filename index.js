@@ -459,7 +459,4 @@ mySwiperWrapper.addEventListener("mouseleave", function(){
     
   });
  
-
-
-
 // JS FOR HOME PAGE ENDS HERE
