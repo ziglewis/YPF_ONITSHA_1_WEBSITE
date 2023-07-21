@@ -752,6 +752,7 @@ font-weight: 400;
 
 .blog a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .blog a p{
@@ -884,9 +885,6 @@ footer p{
   border: 1px solid #25D366 ;
   }
 
-  .blog a {
-    cursor: pointer;
-  }
 
 
 /* THE FINAL SECTION OF THE FOOTER ENDS HERE */
