@@ -469,11 +469,8 @@ mySwiperWrapper.addEventListener("mouseleave", function(){
        blogCategory.addEventListener("click", function(){
            window.location.href =  `
            https://ziglewis.github.io/YPF_Anambra_Blog_Page/?${categoryName}=true 
-           `
-           
-       })
-       
-   })
+           `     
+           })  }) 
 
 
 
