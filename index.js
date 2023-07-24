@@ -181,7 +181,7 @@ let poUpOnAndOff = () => {
                                 headerRight: "Skill Acquisition",
                                 content: "A free intensive Skill Acquisition Programme that enables participants to learn skills that interest them.",
                                 footTag: "REGISTER HERE",
-                                link: "wwwwwww.arg",
+                                link: "https://ziglewis.github.io/YPF_404/",
                                 alt: "Young professionals in a skill acquisition session "
 
                                 } 
